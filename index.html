@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Commandes Paco</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+  :root{
+    --bg:#f3f4f6; --card:#ffffff; --ink:#16181d; --soft:#6b7280; --line:#e5e7eb;
+    --metro:#0a3d91; --degrenne:#1f7a4d; --promo:#e11d2a; --gold:#c4a042; --ok:#15803d;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  body{margin:0; font-family:-apple-system,BlinkMacSystemFont,"SF Pro",Roboto,Segoe UI,sans-serif;
+       background:var(--bg); color:var(--ink); padding-bottom:88px}
+  header{position:sticky; top:0; z-index:20; background:var(--card); border-bottom:1px solid var(--line);
+         padding:12px 16px 10px}
+  .h-title{font-size:19px; font-weight:800; letter-spacing:-.02em}
+  .h-sub{font-size:12.5px; color:var(--soft); margin-top:2px}
+  .h-eco{display:inline-block; margin-top:8px; background:#ecfdf3; color:var(--ok);
+         font-weight:700; font-size:12.5px; padding:4px 10px; border-radius:999px}
+  .tabs{display:flex; gap:7px; overflow-x:auto; padding:10px 16px 2px; scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{white-space:nowrap; font-size:13px; font-weight:600; color:var(--soft);
+       background:var(--card); border:1px solid var(--line); padding:7px 13px; border-radius:999px}
+  .tab.on{background:var(--ink); color:#fff; border-color:var(--ink)}
+  section{padding:6px 12px 2px}
+  .s-head{padding:14px 4px 8px}
+  .s-title{font-size:16px; font-weight:800; letter-spacing:-.01em}
+  .s-sub{font-size:12px; color:var(--soft); margin-top:1px}
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden;
+        display:flex; flex-direction:column; position:relative}
+  .ph{height:108px; background:#fafafa; display:flex; align-items:center; justify-content:center}
+  .ph img{max-height:100%; max-width:100%; object-fit:contain}
+  .ph .noimg{font-size:34px; opacity:.5}
+  .badges{position:absolute; top:7px; left:7px; display:flex; gap:5px; flex-wrap:wrap; max-width:88%}
+  .b{font-size:10.5px; font-weight:800; padding:3px 7px; border-radius:7px; color:#fff; line-height:1}
+  .b.promo{background:var(--promo)} .b.new{background:var(--gold)} .b.flash{background:#111}
+  .src{position:absolute; top:7px; right:7px; font-size:9.5px; font-weight:800; color:#fff;
+       padding:3px 6px; border-radius:6px}
+  .src.metro{background:var(--metro)} .src.degrenne{background:var(--degrenne)}
+  .body{padding:9px 10px 10px; display:flex; flex-direction:column; flex:1}
+  .name{font-size:12.5px; font-weight:600; line-height:1.25; height:32px; overflow:hidden;
+        display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical}
+  .price{margin-top:auto; padding-top:8px; display:flex; align-items:baseline; gap:6px}
+  .p-now{font-size:17px; font-weight:800; letter-spacing:-.02em}
+  .p-u{font-size:10.5px; color:var(--soft); font-weight:600}
+  .p-old{font-size:11.5px; color:var(--soft); text-decoration:line-through}
+  .add{margin-top:9px; border:0; width:100%; padding:9px; border-radius:10px; background:var(--ink);
+       color:#fff; font-size:13px; font-weight:700}
+  .add.in{background:#ecfdf3; color:var(--ok)}
+  .qrow{margin-top:9px; display:flex; align-items:center; justify-content:space-between;
+        background:#f3f4f6; border-radius:10px; padding:4px}
+  .qbtn{width:34px; height:30px; border:0; background:var(--card); border-radius:8px; font-size:17px; font-weight:800; color:var(--ink)}
+  .qn{font-size:14px; font-weight:800}
+  .cartbar{position:fixed; left:0; right:0; bottom:0; z-index:30; padding:10px 14px env(safe-area-inset-bottom);
+           background:var(--card); border-top:1px solid var(--line); display:none}
+  .cartbar.show{display:block}
+  .cbtn{width:100%; border:0; padding:14px; border-radius:13px; background:var(--promo); color:#fff;
+        font-size:15px; font-weight:800; display:flex; align-items:center; justify-content:space-between}
+  .cbtn .r{display:flex; gap:10px; align-items:center}
+  .cbtn .eco{background:rgba(255,255,255,.22); padding:3px 9px; border-radius:999px; font-size:12px; font-weight:700}
+  .sheet{position:fixed; inset:0; z-index:40; background:rgba(0,0,0,.4); display:none; align-items:flex-end}
+  .sheet.show{display:flex}
+  .panel{background:var(--bg); width:100%; max-height:86vh; border-radius:18px 18px 0 0; overflow:auto; padding:14px 14px 96px}
+  .panel h2{font-size:18px; font-weight:800; margin:6px 4px 12px}
+  .ci{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:10px;
+      display:flex; gap:10px; align-items:center; margin-bottom:8px}
+  .ci img{width:42px; height:42px; object-fit:contain}
+  .ci .nm{font-size:13px; font-weight:600; line-height:1.2}
+  .ci .mt{font-size:11px; color:var(--soft); margin-top:2px}
+  .ci .qrow{margin:0; width:118px}
+  .empty{text-align:center; color:var(--soft); padding:40px 20px; font-size:14px}
+  .tot{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin-top:6px}
+  .tot .l{display:flex; justify-content:space-between; font-size:14px; padding:3px 0}
+  .tot .l.big{font-size:17px; font-weight:800; border-top:1px solid var(--line); margin-top:6px; padding-top:9px}
+  .tot .l .eco{color:var(--ok); font-weight:700}
+</style>
+</head>
+<body>
+<header>
+  <div class="h-title">Promos pour Paco</div>
+  <div class="h-sub" id="sub">Metro Nanterre + Degrenne</div>
+  <div class="h-eco" id="eco"></div>
+</header>
+<div class="tabs" id="tabs"></div>
+<main id="main"></main>
+
+<div class="cartbar" id="cartbar">
+  <button class="cbtn" id="openCart">
+    <span id="cbtnL">🛒 Voir le panier</span>
+    <span class="r"><span class="eco" id="cbtnEco"></span><span id="cbtnTot">0,00 €</span></span>
+  </button>
+</div>
+
+<div class="sheet" id="sheet">
+  <div class="panel">
+    <h2>Ton panier</h2>
+    <div id="cartList"></div>
+    <div class="tot" id="totBox" style="display:none">
+      <div class="l"><span>Sous-total</span><span id="tSub">0,00 €</span></div>
+      <div class="l"><span>Économie réalisée</span><span class="eco" id="tEco">0,00 €</span></div>
+      <div class="l big"><span>Total</span><span id="tTot">0,00 €</span></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const tg = window.Telegram ? window.Telegram.WebApp : null;
+if(tg){ tg.ready(); tg.expand(); }
+const eur = n => (n||0).toFixed(2).replace('.',',')+' €';
+let DATA=null, cart={}; // id -> {item, qty}
+
+function srcLabel(s){ return s==='metro' ? 'METRO' : (s==='degrenne'?'DEGRENNE':s.toUpperCase()); }
+
+function cardHTML(it){
+  const inCart = cart[it.id];
+  const img = it.image ? `<img loading="lazy" src="${it.image}" alt="">` : `<span class="noimg">🛒</span>`;
+  let badges = '';
+  if(it.remise>0) badges += `<span class="b promo">-${it.remise}%</span>`;
+  if(it.tag==='vente flash') badges += `<span class="b flash">⚡ FLASH</span>`;
+  if(it.new!=null && it.new<=4) badges += `<span class="b new">NEW ${it.new}j</span>`;
+  const old = it.barre ? `<span class="p-old">${eur(it.barre)}</span>` : '';
+  const ctrl = inCart
+    ? `<div class="qrow"><button class="qbtn" onclick="chg(${it.id},-1)">–</button>
+         <span class="qn">${inCart.qty}</span>
+         <button class="qbtn" onclick="chg(${it.id},1)">+</button></div>`
+    : `<button class="add" onclick="chg(${it.id},1)">＋ Ajouter</button>`;
+  return `<div class="card" id="c${it.id}">
+    <div class="ph">${img}<div class="badges">${badges}</div>
+      <span class="src ${it.source}">${srcLabel(it.source)}</span></div>
+    <div class="body">
+      <div class="name">${it.name}</div>
+      <div class="price"><span class="p-now">${eur(it.prix)}</span><span class="p-u">/u</span>${old}</div>
+      ${ctrl}
+    </div></div>`;
+}
+
+function render(){
+  const eco = document.getElementById('eco');
+  eco.textContent = DATA.eco_potentielle>0 ? `Jusqu'à ${eur(DATA.eco_potentielle)} d'économie cette semaine` : '';
+  document.getElementById('sub').textContent = `${DATA.magasin} · maj ${DATA.updated}`;
+  const tabs = document.getElementById('tabs'); tabs.innerHTML='';
+  const main = document.getElementById('main'); main.innerHTML='';
+  DATA.sections.forEach((s,i)=>{
+    if(!s.items.length) return;
+    const t=document.createElement('button'); t.className='tab'+(i===0?' on':''); t.textContent=s.titre;
+    t.onclick=()=>{ document.getElementById('sec'+i).scrollIntoView({behavior:'smooth',block:'start'});
+      document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on')); t.classList.add('on'); };
+    tabs.appendChild(t);
+    const sec=document.createElement('section'); sec.id='sec'+i;
+    sec.innerHTML=`<div class="s-head"><div class="s-title">${s.titre}</div><div class="s-sub">${s.sub}</div></div>
+      <div class="grid">${s.items.map(cardHTML).join('')}</div>`;
+    main.appendChild(sec);
+  });
+}
+
+function findItem(id){
+  for(const s of DATA.sections){ const f=s.items.find(x=>x.id===id); if(f) return f; }
+  return null;
+}
+function chg(id,d){
+  const it=findItem(id); if(!it) return;
+  const cur=cart[id]?cart[id].qty:0; const q=cur+d;
+  if(q<=0) delete cart[id]; else cart[id]={item:it,qty:q};
+  // re-render la carte concernee
+  const el=document.getElementById('c'+id); if(el) el.outerHTML=cardHTML(it);
+  refreshCart(); if(tg) tg.HapticFeedback && tg.HapticFeedback.impactOccurred('light');
+}
+function totals(){
+  let sub=0,eco=0,n=0;
+  for(const k in cart){ const {item,qty}=cart[k]; sub+=item.prix*qty; n+=qty;
+    if(item.barre&&item.barre>item.prix) eco+=(item.barre-item.prix)*qty; }
+  return {sub:sub,eco:eco,n:n};
+}
+function refreshCart(){
+  const {sub,eco,n}=totals();
+  const bar=document.getElementById('cartbar');
+  bar.classList.toggle('show', n>0);
+  document.getElementById('cbtnL').textContent=`🛒 ${n} article${n>1?'s':''}`;
+  document.getElementById('cbtnTot').textContent=eur(sub);
+  document.getElementById('cbtnEco').textContent = eco>0?('éco '+eur(eco)):'';
+  document.getElementById('cbtnEco').style.display = eco>0?'inline-block':'none';
+  if(tg){
+    if(n>0){ tg.MainButton.setText(`Passer la commande · ${eur(sub)}`); tg.MainButton.show(); }
+    else tg.MainButton.hide();
+  }
+  if(document.getElementById('sheet').classList.contains('show')) renderCart();
+}
+function renderCart(){
+  const list=document.getElementById('cartList'); const keys=Object.keys(cart);
+  if(!keys.length){ list.innerHTML=`<div class="empty">Ton panier est vide.<br>Ajoute des promos pour commencer.</div>`;
+    document.getElementById('totBox').style.display='none'; return; }
+  list.innerHTML=keys.map(k=>{ const {item,qty}=cart[k];
+    const img=item.image?`<img src="${item.image}">`:`<div style="width:42px;text-align:center">🛒</div>`;
+    return `<div class="ci">${img}
+      <div style="flex:1"><div class="nm">${item.name}</div>
+        <div class="mt">${srcLabel(item.source)} · ${eur(item.prix)}/u${item.remise>0?` · -${item.remise}%`:''}</div></div>
+      <div class="qrow"><button class="qbtn" onclick="chg(${item.id},-1)">–</button>
+        <span class="qn">${qty}</span><button class="qbtn" onclick="chg(${item.id},1)">+</button></div></div>`;
+  }).join('');
+  const {sub,eco}=totals();
+  document.getElementById('totBox').style.display='block';
+  document.getElementById('tSub').textContent=eur(sub);
+  document.getElementById('tEco').textContent=eco>0?('− '+eur(eco)):'0,00 €';
+  document.getElementById('tTot').textContent=eur(sub);
+}
+document.getElementById('openCart').onclick=()=>{ renderCart(); document.getElementById('sheet').classList.add('show'); };
+document.getElementById('sheet').onclick=(e)=>{ if(e.target.id==='sheet') document.getElementById('sheet').classList.remove('show'); };
+
+function passerCommande(){
+  const items=Object.values(cart).map(({item,qty})=>({id:item.id,name:item.name,source:item.source,prix:item.prix,qty:qty}));
+  if(!items.length) return;
+  const payload=JSON.stringify({action:'order', items:items});
+  if(tg){ tg.sendData(payload); } // ferme la webapp et envoie au bot
+  else { alert('Commande (hors Telegram):\n'+payload); }
+}
+if(tg){ tg.MainButton.onClick(passerCommande); tg.MainButton.color=getComputedStyle(document.documentElement).getPropertyValue('--promo').trim()||'#e11d2a'; tg.MainButton.textColor='#ffffff'; }
+
+fetch('promos.json?t='+Date.now()).then(r=>r.json()).then(d=>{ DATA=d; render(); refreshCart(); })
+  .catch(e=>{ document.getElementById('main').innerHTML=`<div class="empty">Impossible de charger les promos.<br>${e}</div>`; });
+</script>
+</body>
+</html>
