@@ -88,6 +88,7 @@
        padding:4px 9px; border-radius:9px; -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); box-shadow:var(--gloss)}
   .tag.ends{background:rgba(238,180,90,.28); color:var(--amber)} .tag.ends.soon{background:rgba(214,56,58,.18); color:var(--promo)}
   .tag.eco{background:rgba(15,122,79,.15); color:var(--green)}
+  .tag.super{background:rgba(214,56,58,.95); color:#fff}
   .tag.best{background:rgba(15,122,79,.92); color:#fff}
   .tag.warn{background:rgba(176,106,22,.18); color:var(--amber)}
   .pmes{font-size:11px; color:var(--faint); margin-top:3px}
@@ -248,6 +249,8 @@ function cardHTML(it){
   let badges=''; if(it.remise>0) badges+=`<span class="pill remise">−${it.remise}%</span>`;
   const old = it.barre ? `<span class="pold">${eur(it.barre)}</span>` : '';
   let metas='';
+  if(it.super) metas+=`<span class="tag super">💥 Super affaire</span>`;
+  if(it.plus_bas_j!=null && it.plus_bas_j>=7) metas+=`<span class="tag super">📉 Au plus bas depuis ${it.plus_bas_j} j</span>`;
   const dl=daysLeft(it.ends_date);
   if(dl!=null){ const soon=dl<=2; metas+=`<span class="tag ends${soon?' soon':''}">⏳ ${endsLabel(dl)}</span>`; }
   else if(it.ends){ metas+=`<span class="tag ends">⏳ ${it.ends}</span>`; }
