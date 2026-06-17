@@ -1,6 +1,8 @@
 {
- "updated_iso": "2026-06-17T10:13",
- "updated_human": "mercredi 17 juin à 10h13",
+ "updated_iso": "2026-06-17T10:20",
+ "updated_human": "mercredi 17 juin à 10h20",
+ "updated_metro": "mercredi 17 juin à 10h20",
+ "updated_degrenne": "mercredi 17 juin à 10h20",
  "magasin": "Metro Nanterre + Degrenne",
  "sections": [
   {
@@ -21,6 +23,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -36,6 +39,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -51,6 +55,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -66,6 +71,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 13 jours",
      "ends_n": 13,
+     "ends_date": "2026-06-30",
      "reason": null,
      "sous_habituel": null
     },
@@ -81,6 +87,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -96,6 +103,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -111,6 +119,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -126,6 +135,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -141,6 +151,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -156,6 +167,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -171,6 +183,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -186,6 +199,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     }
@@ -209,6 +223,23 @@
      "unit_noun": "l'unité",
      "ends": null,
      "ends_n": null,
+     "ends_date": null,
+     "reason": "acheté il y a 60 j",
+     "sous_habituel": 13
+    },
+    {
+     "id": 370,
+     "name": "165g pringles cheese & oignon",
+     "source": "degrenne",
+     "prix": 1.52,
+     "barre": null,
+     "remise": 0,
+     "image": null,
+     "format": "165 g",
+     "unit_noun": "l'unité",
+     "ends": null,
+     "ends_n": null,
+     "ends_date": null,
      "reason": "acheté il y a 60 j",
      "sous_habituel": 13
     },
@@ -224,8 +255,41 @@
      "unit_noun": "la bouteille",
      "ends": null,
      "ends_n": null,
+     "ends_date": null,
      "reason": "acheté il y a 392 j",
      "sous_habituel": 12
+    },
+    {
+     "id": 397,
+     "name": "75cl rose plaisir'ose mediterr",
+     "source": "degrenne",
+     "prix": 3.07,
+     "barre": null,
+     "remise": 0,
+     "image": null,
+     "format": "75 cl",
+     "unit_noun": "la bouteille",
+     "ends": null,
+     "ends_n": null,
+     "ends_date": null,
+     "reason": "acheté il y a 392 j",
+     "sous_habituel": 12
+    },
+    {
+     "id": 356,
+     "name": "Poche 33cl caprisun multivitam",
+     "source": "degrenne",
+     "prix": 0.83,
+     "barre": null,
+     "remise": 0,
+     "image": null,
+     "format": "33 cl",
+     "unit_noun": "la bouteille",
+     "ends": null,
+     "ends_n": null,
+     "ends_date": null,
+     "reason": "Tu en prends souvent, c'est le moment d'en reprendre",
+     "sous_habituel": 2
     },
     {
      "id": 237,
@@ -239,6 +303,23 @@
      "unit_noun": "la bouteille",
      "ends": null,
      "ends_n": null,
+     "ends_date": null,
+     "reason": "acheté il y a 357 j",
+     "sous_habituel": 1
+    },
+    {
+     "id": 337,
+     "name": "*75cl bio minervois dom.reze 2021",
+     "source": "degrenne",
+     "prix": 3.65,
+     "barre": null,
+     "remise": 0,
+     "image": null,
+     "format": "75 cl",
+     "unit_noun": "la bouteille",
+     "ends": null,
+     "ends_n": null,
+     "ends_date": null,
      "reason": "acheté il y a 357 j",
      "sous_habituel": 1
     }
@@ -262,6 +343,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "acheté il y a 7 j",
      "sous_habituel": null
     },
@@ -277,6 +359,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "Tu en prends souvent, c'est le moment d'en reprendre",
      "sous_habituel": 8
     },
@@ -292,6 +375,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "acheté il y a 153 j",
      "sous_habituel": 10
     },
@@ -307,6 +391,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "Tu en reprends régulièrement, c'est le moment d'en reprendre",
      "sous_habituel": 84
     },
@@ -322,6 +407,7 @@
      "unit_noun": "la bouteille",
      "ends": null,
      "ends_n": null,
+     "ends_date": null,
      "reason": "Tu en reprends régulièrement, c'est le moment d'en reprendre",
      "sous_habituel": null
     },
@@ -337,6 +423,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "Tu en reprends régulièrement, c'est le moment d'en reprendre",
      "sous_habituel": 10
     },
@@ -352,6 +439,7 @@
      "unit_noun": "la bouteille",
      "ends": null,
      "ends_n": null,
+     "ends_date": null,
      "reason": "acheté il y a 27 j",
      "sous_habituel": null
     },
@@ -367,6 +455,7 @@
      "unit_noun": "la bouteille",
      "ends": null,
      "ends_n": null,
+     "ends_date": null,
      "reason": "Tu en prends souvent, c'est le moment d'en reprendre",
      "sous_habituel": 2
     }
@@ -390,6 +479,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "Tu en reprends régulièrement, c'est le moment d'en reprendre",
      "sous_habituel": null
     },
@@ -405,6 +495,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "Tu en reprends régulièrement, acheté il y a 19 j",
      "sous_habituel": 30
     },
@@ -420,6 +511,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "Tu en reprends régulièrement, acheté il y a 19 j",
      "sous_habituel": null
     },
@@ -435,6 +527,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "Tu en reprends régulièrement, acheté il y a 7 j",
      "sous_habituel": null
     },
@@ -450,6 +543,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "acheté il y a 14 j",
      "sous_habituel": 11
     },
@@ -465,6 +559,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "acheté il y a 14 j",
      "sous_habituel": 4
     },
@@ -480,6 +575,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "acheté il y a 27 j",
      "sous_habituel": null
     },
@@ -495,6 +591,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "acheté il y a 118 j",
      "sous_habituel": 12
     },
@@ -510,6 +607,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "acheté il y a 469 j",
      "sous_habituel": 20
     },
@@ -525,6 +623,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "acheté il y a 118 j",
      "sous_habituel": null
     },
@@ -540,6 +639,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "acheté il y a 118 j",
      "sous_habituel": null
     },
@@ -555,6 +655,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "acheté il y a 80 j",
      "sous_habituel": null
     }
@@ -578,6 +679,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -593,6 +695,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -608,6 +711,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -623,6 +727,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -638,6 +743,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -653,6 +759,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "acheté il y a 464 j",
      "sous_habituel": null
     },
@@ -668,6 +775,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "acheté il y a 464 j",
      "sous_habituel": 8
     },
@@ -683,6 +791,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -698,6 +807,7 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": null,
      "sous_habituel": null
     },
@@ -713,6 +823,7 @@
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "ends_date": "2026-06-20",
      "reason": "acheté il y a 75 j",
      "sous_habituel": null
     }

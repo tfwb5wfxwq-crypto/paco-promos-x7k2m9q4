@@ -29,15 +29,18 @@
   .glass{background:var(--glass); -webkit-backdrop-filter:var(--blur); backdrop-filter:var(--blur);
          border:1px solid var(--stroke); box-shadow:var(--gloss), var(--lift);}
   /* HEADER */
-  html{scroll-padding-top:106px}
+  html{scroll-padding-top:124px}
   header{position:sticky; top:0; z-index:20; padding:10px 16px 8px;
          background:rgba(255,255,255,.64); -webkit-backdrop-filter:var(--blur); backdrop-filter:var(--blur);
          border-bottom:1px solid var(--hair);}
   .hrow{display:flex; align-items:center; justify-content:space-between; gap:10px}
   .brand{font-size:16px; font-weight:700; letter-spacing:-.02em}
+  .majs{display:flex; flex-wrap:wrap; gap:6px 14px; margin-top:6px}
   .maj{display:inline-flex; align-items:center; gap:6px; font-size:11px; color:var(--soft)}
-  .maj b{color:var(--soft); font-weight:600}
-  .dot{width:6px; height:6px; border-radius:50%; background:var(--degrenne); box-shadow:0 0 0 3px rgba(15,122,79,.18)}
+  .maj b{color:var(--ink); font-weight:600}
+  .dot{width:6px; height:6px; border-radius:50%; background:var(--degrenne)}
+  .dot.metro{background:var(--metro); box-shadow:0 0 0 3px rgba(10,74,160,.16)}
+  .dot.degr{background:var(--degrenne); box-shadow:0 0 0 3px rgba(15,122,79,.16)}
   /* NAV */
   .nav{display:flex; gap:8px; overflow-x:auto; padding:9px 0 2px; scrollbar-width:none}
   .nav::-webkit-scrollbar{display:none}
@@ -46,7 +49,7 @@
         border:1px solid var(--stroke); padding:9px 15px; border-radius:999px; box-shadow:var(--gloss)}
   .chip.on{background:rgba(23,32,27,.88); color:#fff; border-color:rgba(255,255,255,.2)}
   /* SECTION */
-  section{padding:8px 14px 4px; scroll-margin-top:100px}
+  section{padding:8px 14px 4px; scroll-margin-top:118px}
   .shead{display:flex; align-items:center; gap:12px; padding:20px 4px 13px}
   .semoji{width:42px; height:42px; flex:none; display:flex; align-items:center; justify-content:center; font-size:20px;
           border-radius:14px; background:var(--glass); border:1px solid var(--stroke);
@@ -150,7 +153,10 @@
 <header>
   <div class="hrow">
     <div class="brand">🧺 Promos Paco</div>
-    <div class="maj"><span class="dot"></span>maj <b id="maj">…</b></div>
+  </div>
+  <div class="majs">
+    <span class="maj"><span class="dot metro"></span>Metro · <b id="majMetro">…</b></span>
+    <span class="maj"><span class="dot degr"></span>Degrenne · <b id="majDegr">…</b></span>
   </div>
   <div class="nav" id="nav"></div>
 </header>
@@ -217,7 +223,9 @@ function cardHTML(it){
     </div></div>`;
 }
 function render(){
-  document.getElementById('maj').textContent = DATA.updated_human || DATA.updated_iso || '';
+  const sm=v=>v||'—';
+  document.getElementById('majMetro').textContent = sm(DATA.updated_metro);
+  document.getElementById('majDegr').textContent = sm(DATA.updated_degrenne);
   const nav=document.getElementById('nav'); nav.innerHTML='';
   const main=document.getElementById('main'); main.innerHTML='';
   DATA.sections.forEach((s,i)=>{
