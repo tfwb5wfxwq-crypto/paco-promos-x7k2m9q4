@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T15:46",
- "updated_human": "mercredi 17 juin à 15h46",
+ "updated_iso": "2026-06-17T15:48",
+ "updated_human": "mercredi 17 juin à 15h48",
  "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 10h20",
  "magasin": "Metro Nanterre + Degrenne",
@@ -301,12 +301,15 @@
      "marque": null,
      "contenance": null,
      "prix_ttc": null,
-     "prix_mesure": null,
-     "mesure_unit": null,
+     "prix_mesure": 9.21,
+     "mesure_unit": "kg",
      "compare": {
       "source": "metro",
       "prix": 1.21,
-      "cheaper_here": false
+      "basis": "mesure",
+      "mesure": 17.23,
+      "unit": "kg",
+      "cheaper_here": true
      }
     },
     {
@@ -327,12 +330,15 @@
      "marque": null,
      "contenance": null,
      "prix_ttc": null,
-     "prix_mesure": null,
-     "mesure_unit": null,
+     "prix_mesure": 9.21,
+     "mesure_unit": "kg",
      "compare": {
       "source": "metro",
       "prix": 1.21,
-      "cheaper_here": false
+      "basis": "mesure",
+      "mesure": 17.23,
+      "unit": "kg",
+      "cheaper_here": true
      }
     },
     {
@@ -353,8 +359,8 @@
      "marque": null,
      "contenance": null,
      "prix_ttc": null,
-     "prix_mesure": null,
-     "mesure_unit": null,
+     "prix_mesure": 4.09,
+     "mesure_unit": "L",
      "compare": null
     },
     {
@@ -375,8 +381,8 @@
      "marque": null,
      "contenance": null,
      "prix_ttc": null,
-     "prix_mesure": null,
-     "mesure_unit": null,
+     "prix_mesure": 4.09,
+     "mesure_unit": "L",
      "compare": null
     },
     {
@@ -397,8 +403,8 @@
      "marque": null,
      "contenance": null,
      "prix_ttc": null,
-     "prix_mesure": null,
-     "mesure_unit": null,
+     "prix_mesure": 2.52,
+     "mesure_unit": "L",
      "compare": null
     },
     {
@@ -419,8 +425,8 @@
      "marque": null,
      "contenance": null,
      "prix_ttc": null,
-     "prix_mesure": null,
-     "mesure_unit": null,
+     "prix_mesure": 4.87,
+     "mesure_unit": "L",
      "compare": null
     },
     {
@@ -441,8 +447,8 @@
      "marque": null,
      "contenance": null,
      "prix_ttc": null,
-     "prix_mesure": null,
-     "mesure_unit": null,
+     "prix_mesure": 4.87,
+     "mesure_unit": "L",
      "compare": null
     }
    ]
@@ -559,8 +565,8 @@
      "marque": null,
      "contenance": null,
      "prix_ttc": null,
-     "prix_mesure": null,
-     "mesure_unit": null,
+     "prix_mesure": 5.13,
+     "mesure_unit": "L",
      "compare": null
     },
     {
@@ -603,11 +609,14 @@
      "marque": null,
      "contenance": null,
      "prix_ttc": null,
-     "prix_mesure": null,
-     "mesure_unit": null,
+     "prix_mesure": 44.07,
+     "mesure_unit": "L",
      "compare": {
       "source": "metro",
       "prix": 32.44,
+      "basis": "mesure",
+      "mesure": 46.34,
+      "unit": "L",
       "cheaper_here": true
      }
     },
@@ -629,8 +638,8 @@
      "marque": null,
      "contenance": null,
      "prix_ttc": null,
-     "prix_mesure": null,
-     "mesure_unit": null,
+     "prix_mesure": 2.52,
+     "mesure_unit": "L",
      "compare": null
     }
    ]
@@ -796,6 +805,9 @@
      "compare": {
       "source": "degrenne",
       "prix": 30.85,
+      "basis": "mesure",
+      "mesure": 44.07,
+      "unit": "L",
       "cheaper_here": false
      }
     },
@@ -819,11 +831,7 @@
      "prix_ttc": 8.38,
      "prix_mesure": 9.97,
      "mesure_unit": "L",
-     "compare": {
-      "source": "degrenne",
-      "prix": 25.79,
-      "cheaper_here": true
-     }
+     "compare": null
     },
     {
      "id": 82,

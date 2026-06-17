@@ -228,10 +228,11 @@ function cardHTML(it){
   const dl=daysLeft(it.ends_date);
   if(dl!=null){ const soon=dl<=2; metas+=`<span class="tag ends${soon?' soon':''}">⏳ ${endsLabel(dl)}</span>`; }
   else if(it.ends){ metas+=`<span class="tag ends">⏳ ${it.ends}</span>`; }
-  if(it.compare){ const oth=it.compare.source==='degrenne'?'Degrenne':'Metro';
-    metas += it.compare.cheaper_here
-      ? `<span class="tag best">✓ Le moins cher (vs ${eur(it.compare.prix)} ${oth})</span>`
-      : `<span class="tag warn">↘ Moins cher chez ${oth} : ${eur(it.compare.prix)}</span>`; }
+  if(it.compare){ const c=it.compare; const oth=c.source==='degrenne'?'Degrenne':'Metro';
+    const op=(c.basis==='mesure'&&c.mesure)?eur(c.mesure)+'/'+c.unit:eur(c.prix);
+    metas += c.cheaper_here
+      ? `<span class="tag best">✓ Meilleur prix ici · ${oth} ${op}</span>`
+      : `<span class="tag warn">↘ Moins cher chez ${oth} · ${op}</span>`; }
   if(it.sous_habituel) metas+=`<span class="tag eco">−${it.sous_habituel}% sous ton prix habituel</span>`;
   if(it.reason) metas+=`<span class="reason"><span class="ck">✓</span><span>${it.reason}</span></span>`;
   return `<div class="card" id="c${it.id}">
