@@ -96,6 +96,19 @@
         background:rgba(255,255,255,.6); border:1px solid var(--stroke); padding:4px 10px; border-radius:8px}
   .cond b{font-weight:750; white-space:nowrap}
   .cc-cond{display:block; margin-top:5px; font-size:10.5px; font-weight:600; color:var(--ink); line-height:1.3}
+  .hablist{display:flex; flex-direction:column; gap:8px; padding:0 2px}
+  .hab{background:var(--glass); border:1px solid var(--stroke); border-radius:14px; padding:11px 13px; box-shadow:var(--gloss)}
+  .hab-nm{font-size:13px; font-weight:650; color:var(--ink); margin-bottom:8px; line-height:1.25}
+  .hab-row{display:flex; align-items:stretch; gap:8px}
+  .hab-side{flex:1; text-align:center; padding:7px 4px; border-radius:10px; border:1px solid var(--hair); background:rgba(255,255,255,.4)}
+  .hab-side.win{border-color:rgba(63,122,88,.42); background:rgba(63,122,88,.10)}
+  .hab-src{font-size:10px; font-weight:700; letter-spacing:.04em; text-transform:uppercase}
+  .hab-src.metro{color:var(--metro)} .hab-src.degr{color:#36795a}
+  .hab-mes{font-size:15px; font-weight:750; color:var(--ink); margin-top:2px}
+  .hab-u{font-size:10px; color:var(--soft); font-weight:500}
+  .hab-vs{align-self:center; font-size:11px; color:var(--faint); font-weight:600}
+  .hab-verdict{margin-top:8px; font-size:11.5px; color:var(--ink); text-align:center}
+  .hab-verdict b{font-weight:750}
   .marque{font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--soft); margin-bottom:1px}
   /* COMPARATIF côte à côte */
   .clist{display:flex; flex-direction:column; gap:12px}
@@ -314,6 +327,18 @@ function addCompare(src,id){
         cart[id]={item,qty:(cart[id]?cart[id].qty:0)+1}; refreshCart(); saveCart();
         if(tg&&tg.HapticFeedback) tg.HapticFeedback.impactOccurred('light'); return; } } }
 }
+function habCardHTML(h){
+  const e=v=>v==null?'':v.toFixed(2).replace('.',',')+' €';
+  const win=h.moins_cher;
+  const side=(who,label,mes,cls)=>`<div class="hab-side ${win===who?'win':''}">
+     <div class="hab-src ${cls}">${label}</div>
+     <div class="hab-mes">${e(mes)}<span class="hab-u"> /${h.unit}</span></div></div>`;
+  return `<div class="hab">
+    <div class="hab-nm">${h.name}</div>
+    <div class="hab-row">${side('codis','Degrenne',h.codis_mes,'degr')}<div class="hab-vs">vs</div>${side('metro','Metro',h.metro_mes,'metro')}</div>
+    <div class="hab-verdict">✓ Achète chez <b>${win==='codis'?'Degrenne':'Metro'}</b>${h.ecart?` · <b>−${h.ecart}%</b>`:''}</div>
+  </div>`;
+}
 function render(){
   const sm=v=>v||'—';
   document.getElementById('majMetro').textContent = sm(DATA.updated_metro);
@@ -322,7 +347,7 @@ function render(){
   const main=document.getElementById('main'); main.innerHTML='';
   DATA.sections.forEach((s,i)=>{
     const isCmp = s.type==='compare';
-    const items = isCmp ? (s.items||[]) : s.items.filter(it=>{ const dl=daysLeft(it.ends_date); return dl==null || dl>=0; });
+    const items = (isCmp||s.type==='habitudes') ? (s.items||[]) : s.items.filter(it=>{ const dl=daysLeft(it.ends_date); return dl==null || dl>=0; });
     if(!items.length) return;
     const c=document.createElement('button'); c.className='chip'+(i===0?' on':''); c.textContent=(s.emoji||'')+' '+s.titre;
     c.onclick=()=>{ const el=document.getElementById('sec'+i); if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
@@ -330,7 +355,8 @@ function render(){
     nav.appendChild(c);
     const sec=document.createElement('section'); sec.id='sec'+i;
     const body = isCmp ? `<div class="clist">${items.map(compareCardHTML).join('')}</div>`
-                       : `<div class="grid">${items.map(cardHTML).join('')}</div>`;
+               : s.type==='habitudes' ? `<div class="hablist">${items.map(habCardHTML).join('')}</div>`
+               : `<div class="grid">${items.map(cardHTML).join('')}</div>`;
     sec.innerHTML=`<div class="shead"><div class="semoji">${s.emoji||'🛒'}</div>
       <div><div class="stitle">${s.titre}</div><div class="ssub">${s.sub||''}</div></div></div>`+body;
     main.appendChild(sec);
