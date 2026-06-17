@@ -1,12 +1,13 @@
 {
- "updated": "2026-06-17",
+ "updated_iso": "2026-06-17T09:05",
+ "updated_human": "mercredi 17 juin à 9h05",
  "magasin": "Metro Nanterre + Degrenne",
- "eco_potentielle": 12.43,
  "sections": [
   {
    "key": "flash",
-   "titre": "⚡ Ventes flash",
-   "sub": "Les plus grosses remises du moment",
+   "titre": "Ventes flash",
+   "emoji": "⚡",
+   "sub": "Les plus grosses baisses du moment",
    "items": [
     {
      "id": 76,
@@ -16,10 +17,12 @@
      "barre": 17.1,
      "remise": 34,
      "image": "https://cdn.metro-group.com/fr/fr_pim_887207001002_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "vente flash",
-     "eco": null
+     "format": "75 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     },
     {
      "id": 40,
@@ -29,10 +32,12 @@
      "barre": 37.57,
      "remise": 31,
      "image": "https://cdn.metro-group.com/fr/fr_pim_397395001002_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "vente flash",
-     "eco": null
+     "format": "50 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     },
     {
      "id": 54,
@@ -42,10 +47,12 @@
      "barre": 38.52,
      "remise": 30,
      "image": "https://cdn.metro-group.com/fr/fr_pim_882580001002_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "vente flash",
-     "eco": null
+     "format": "6 × 33 cl",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     },
     {
      "id": 98,
@@ -55,10 +62,12 @@
      "barre": 24.49,
      "remise": 26,
      "image": "https://cdn.metro-group.com/fr/fr_pim_858591001002_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "vente flash",
-     "eco": null
+     "format": "33 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     },
     {
      "id": 84,
@@ -68,17 +77,73 @@
      "barre": 2.9,
      "remise": 22,
      "image": "https://cdn.metro-group.com/fr/fr_pim_852249001001_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "vente flash",
-     "eco": null
+     "format": "400 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
+    }
+   ]
+  },
+  {
+   "key": "degrenne",
+   "titre": "Le moins cher chez Degrenne",
+   "emoji": "💚",
+   "sub": "Sous ton prix d'achat habituel",
+   "items": [
+    {
+     "id": 171,
+     "name": "165g pringles cheese & oignon",
+     "source": "degrenne",
+     "prix": 1.52,
+     "barre": null,
+     "remise": 0,
+     "image": null,
+     "format": "165 g",
+     "unit_noun": "l'unité",
+     "ends": null,
+     "ends_n": null,
+     "reason": "acheté il y a 60 j",
+     "sous_habituel": 13
+    },
+    {
+     "id": 198,
+     "name": "75cl rose plaisir'ose mediterr",
+     "source": "degrenne",
+     "prix": 3.07,
+     "barre": null,
+     "remise": 0,
+     "image": null,
+     "format": "75 cl",
+     "unit_noun": "la bouteille",
+     "ends": null,
+     "ends_n": null,
+     "reason": "acheté il y a 392 j",
+     "sous_habituel": 12
+    },
+    {
+     "id": 136,
+     "name": "*75cl bio minervois dom.reze 2021",
+     "source": "degrenne",
+     "prix": 3.65,
+     "barre": null,
+     "remise": 0,
+     "image": null,
+     "format": "75 cl",
+     "unit_noun": "la bouteille",
+     "ends": null,
+     "ends_n": null,
+     "reason": "acheté il y a 357 j",
+     "sous_habituel": 1
     }
    ]
   },
   {
    "key": "racheter",
-   "titre": "🔄 À racheter bientôt",
-   "sub": "Ce que tu reprends d'habitude, au meilleur prix",
+   "titre": "À racheter bientôt",
+   "emoji": "🔁",
+   "sub": "Ce que tu reprends d'habitude",
    "items": [
     {
      "id": 88,
@@ -88,10 +153,12 @@
      "barre": 13.06,
      "remise": 15,
      "image": "https://cdn.metro-group.com/fr/fr_pim_387288001001_02.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "à racheter",
-     "eco": null
+     "format": "70 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 7 j",
+     "sous_habituel": null
     },
     {
      "id": 85,
@@ -101,10 +168,12 @@
      "barre": 24.9,
      "remise": 10,
      "image": "https://cdn.metro-group.com/fr/fr_pim_397569001002_02.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "à racheter",
-     "eco": 0.3
+     "format": "4 × 25 cl",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "Tu en prends souvent, c'est le moment d'en reprendre",
+     "sous_habituel": 8
     },
     {
      "id": 38,
@@ -114,10 +183,12 @@
      "barre": 16.2,
      "remise": 10,
      "image": "https://cdn.metro-group.com/fr/fr_pim_819493001002_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "à racheter",
-     "eco": 0.1
+     "format": "25 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 153 j",
+     "sous_habituel": 10
     },
     {
      "id": 67,
@@ -127,23 +198,27 @@
      "barre": 2.84,
      "remise": 2,
      "image": "https://cdn.metro-group.com/fr/fr_pim_318804001001_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "à racheter",
-     "eco": 2.43
+     "format": "6 × 20 cl",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "Tu en reprends régulièrement, c'est le moment d'en reprendre",
+     "sous_habituel": 84
     },
     {
-     "id": 201,
-     "name": "75cl cinsault rose french fami 11°5 igp 2023",
+     "id": 200,
+     "name": "75cl rose ouf de toi mediterra 2025 igp",
      "source": "degrenne",
-     "prix": 2.73,
+     "prix": 3.85,
      "barre": null,
      "remise": 0,
      "image": null,
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "à racheter",
-     "eco": null
+     "format": "75 cl",
+     "unit_noun": "la bouteille",
+     "ends": null,
+     "ends_n": null,
+     "reason": "Tu en reprends régulièrement, c'est le moment d'en reprendre",
+     "sous_habituel": null
     },
     {
      "id": 62,
@@ -153,23 +228,27 @@
      "barre": 17.33,
      "remise": 17,
      "image": "https://cdn.metro-group.com/fr/fr_pim_887379001002_02.png?format=jpg&quality=80&dpi=72",
-     "unite": "unité",
-     "new": 0,
-     "tag": "à racheter",
-     "eco": 0.07
+     "format": "42 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "Tu en reprends régulièrement, c'est le moment d'en reprendre",
+     "sous_habituel": 10
     },
     {
-     "id": 186,
-     "name": "70cl whisky j.daniel black.35°",
+     "id": 133,
+     "name": "70cl whisky glenfidich 12a.40°",
      "source": "degrenne",
-     "prix": 18.15,
+     "prix": 30.85,
      "barre": null,
      "remise": 0,
      "image": null,
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "à racheter",
-     "eco": 3.08
+     "format": "70 cl",
+     "unit_noun": "la bouteille",
+     "ends": null,
+     "ends_n": null,
+     "reason": "acheté il y a 27 j",
+     "sous_habituel": null
     },
     {
      "id": 158,
@@ -179,31 +258,21 @@
      "barre": null,
      "remise": 0,
      "image": null,
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "à racheter",
-     "eco": 0.02
+     "format": "33 cl",
+     "unit_noun": "la bouteille",
+     "ends": null,
+     "ends_n": null,
+     "reason": "Tu en prends souvent, c'est le moment d'en reprendre",
+     "sous_habituel": 2
     }
    ]
   },
   {
    "key": "habituels",
-   "titre": "📋 Tes habituels en promo",
-   "sub": "Tes produits réguliers en réduction",
+   "titre": "Tes habituels en promo",
+   "emoji": "⭐",
+   "sub": "Tes produits réguliers en baisse",
    "items": [
-    {
-     "id": 95,
-     "name": "JACK DANIEL'S Whisky Old N°7 40% 70 cl",
-     "source": "metro",
-     "prix": 13.88,
-     "barre": 15.42,
-     "remise": 10,
-     "image": "https://cdn.metro-group.com/fr/fr_pim_173358001001_02.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "promo sur ton habituel",
-     "eco": null
-    },
     {
      "id": 44,
      "name": "BARON DE LESTAC Bordeaux Élevé en fûts de chêne bouteille 75 cl",
@@ -212,10 +281,27 @@
      "barre": 21.54,
      "remise": 30,
      "image": "https://cdn.metro-group.com/fr/fr_pim_808655001002_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "promo sur ton habituel",
-     "eco": 1.08
+     "format": "75 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "Tu en reprends régulièrement, acheté il y a 19 j",
+     "sous_habituel": 30
+    },
+    {
+     "id": 95,
+     "name": "JACK DANIEL'S Whisky Old N°7 40% 70 cl",
+     "source": "metro",
+     "prix": 13.88,
+     "barre": 15.42,
+     "remise": 10,
+     "image": "https://cdn.metro-group.com/fr/fr_pim_173358001001_02.png?format=jpg&quality=80&dpi=72",
+     "format": "70 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "Tu en reprends régulièrement, acheté il y a 7 j",
+     "sous_habituel": null
     },
     {
      "id": 106,
@@ -225,10 +311,27 @@
      "barre": 46.63,
      "remise": 12,
      "image": "https://cdn.metro-group.com/fr/fr_pim_159588001001_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "promo sur ton habituel",
-     "eco": 4.85
+     "format": "70 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 14 j",
+     "sous_habituel": 11
+    },
+    {
+     "id": 70,
+     "name": "Chivas Regal Whisky XV 15 ans 40% 70 cl",
+     "source": "metro",
+     "prix": 32.44,
+     "barre": 36.29,
+     "remise": 11,
+     "image": "https://cdn.metro-group.com/fr/fr_pim_882085001001_02.png?format=jpg&quality=80&dpi=72",
+     "format": "70 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 27 j",
+     "sous_habituel": null
     },
     {
      "id": 82,
@@ -238,10 +341,12 @@
      "barre": 12.3,
      "remise": 10,
      "image": "https://cdn.metro-group.com/fr/fr_pim_815657001002_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "promo sur ton habituel",
-     "eco": 0.46
+     "format": "75 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 469 j",
+     "sous_habituel": 20
     },
     {
      "id": 25,
@@ -251,10 +356,12 @@
      "barre": 20.04,
      "remise": 31,
      "image": "https://cdn.metro-group.com/fr/fr_pim_892154001001_02.png?format=jpg&quality=80&dpi=72",
-     "unite": "unité",
-     "new": 0,
-     "tag": "promo sur ton habituel",
-     "eco": null
+     "format": "160 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 118 j",
+     "sous_habituel": null
     },
     {
      "id": 31,
@@ -264,10 +371,12 @@
      "barre": 20.04,
      "remise": 31,
      "image": "https://cdn.metro-group.com/fr/fr_pim_892161001002_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "unité",
-     "new": 0,
-     "tag": "promo sur ton habituel",
-     "eco": null
+     "format": "160 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 118 j",
+     "sous_habituel": null
     },
     {
      "id": 56,
@@ -277,10 +386,27 @@
      "barre": 17.1,
      "remise": 34,
      "image": "https://cdn.metro-group.com/fr/fr_pim_887206001002_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "promo sur ton habituel",
-     "eco": null
+     "format": "75 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 80 j",
+     "sous_habituel": null
+    },
+    {
+     "id": 34,
+     "name": "Hollywood Chewing gun sans sucre Green Fresh 87 g",
+     "source": "metro",
+     "prix": 2.63,
+     "barre": 18.95,
+     "remise": 17,
+     "image": "https://cdn.metro-group.com/fr/fr_pim_840488001002_02.png?format=jpg&quality=80&dpi=72",
+     "format": "87 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 464 j",
+     "sous_habituel": null
     },
     {
      "id": 36,
@@ -290,16 +416,49 @@
      "barre": 14.49,
      "remise": 17,
      "image": "https://cdn.metro-group.com/fr/fr_pim_893489001001_01?format=jpg&quality=80&dpi=72",
-     "unite": "unité",
-     "new": 0,
-     "tag": "promo sur ton habituel",
-     "eco": 0.04
+     "format": "",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 464 j",
+     "sous_habituel": 8
+    },
+    {
+     "id": 48,
+     "name": "Hollywood Chewing-gum sans sucres avec édulcorants blancheur menthe polaire 14 g",
+     "source": "metro",
+     "prix": 0.52,
+     "barre": 12.39,
+     "remise": 17,
+     "image": "https://cdn.metro-group.com/fr/fr_pim_839595001002_01.png?format=jpg&quality=80&dpi=72",
+     "format": "14 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 75 j",
+     "sous_habituel": null
+    },
+    {
+     "id": 51,
+     "name": "Hollywood Chewing-gum Ice Fresh sans sucre 14 g",
+     "source": "metro",
+     "prix": 0.52,
+     "barre": 12.39,
+     "remise": 17,
+     "image": "https://cdn.metro-group.com/fr/fr_pim_839381001002_01.png?format=jpg&quality=80&dpi=72",
+     "format": "14 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 75 j",
+     "sous_habituel": null
     }
    ]
   },
   {
    "key": "pour_toi",
-   "titre": "💡 Pour toi",
+   "titre": "Pour toi",
+   "emoji": "💡",
    "sub": "Bons plans dans tes rayons",
    "items": [
     {
@@ -310,23 +469,12 @@
      "barre": 17.96,
      "remise": 17,
      "image": "https://cdn.metro-group.com/fr/fr_pim_839654001002_02.png?format=jpg&quality=80&dpi=72",
-     "unite": "unité",
-     "new": 0,
-     "tag": "pour toi",
-     "eco": null
-    },
-    {
-     "id": 34,
-     "name": "Hollywood Chewing gun sans sucre Green Fresh 87 g",
-     "source": "metro",
-     "prix": 2.63,
-     "barre": 18.95,
-     "remise": 17,
-     "image": "https://cdn.metro-group.com/fr/fr_pim_840488001002_02.png?format=jpg&quality=80&dpi=72",
-     "unite": "unité",
-     "new": 0,
-     "tag": "pour toi",
-     "eco": null
+     "format": "50 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     },
     {
      "id": 43,
@@ -336,10 +484,12 @@
      "barre": 17.19,
      "remise": 17,
      "image": "https://cdn.metro-group.com/fr/fr_pim_173435001001_02.png?format=jpg&quality=80&dpi=72",
-     "unite": "unité",
-     "new": 0,
-     "tag": "pour toi",
-     "eco": null
+     "format": "40 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     },
     {
      "id": 47,
@@ -349,23 +499,12 @@
      "barre": 10.08,
      "remise": 17,
      "image": "https://cdn.metro-group.com/fr/fr_pim_807514001002_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "pour toi",
-     "eco": null
-    },
-    {
-     "id": 48,
-     "name": "Hollywood Chewing-gum sans sucres avec édulcorants blancheur menthe polaire 14 g",
-     "source": "metro",
-     "prix": 0.52,
-     "barre": 12.39,
-     "remise": 17,
-     "image": "https://cdn.metro-group.com/fr/fr_pim_839595001002_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "unité",
-     "new": 0,
-     "tag": "pour toi",
-     "eco": null
+     "format": "25 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     },
     {
      "id": 49,
@@ -375,23 +514,12 @@
      "barre": 10.08,
      "remise": 17,
      "image": "https://cdn.metro-group.com/fr/fr_pim_807513001002_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "pour toi",
-     "eco": null
-    },
-    {
-     "id": 51,
-     "name": "Hollywood Chewing-gum Ice Fresh sans sucre 14 g",
-     "source": "metro",
-     "prix": 0.52,
-     "barre": 12.39,
-     "remise": 17,
-     "image": "https://cdn.metro-group.com/fr/fr_pim_839381001002_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "unité",
-     "new": 0,
-     "tag": "pour toi",
-     "eco": null
+     "format": "25 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     },
     {
      "id": 53,
@@ -401,10 +529,12 @@
      "barre": 19.08,
      "remise": 17,
      "image": "https://cdn.metro-group.com/fr/fr_pim_839509001002_02.png?format=jpg&quality=80&dpi=72",
-     "unite": "unité",
-     "new": 0,
-     "tag": "pour toi",
-     "eco": null
+     "format": "52 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     },
     {
      "id": 72,
@@ -414,10 +544,12 @@
      "barre": 26.72,
      "remise": 17,
      "image": "https://cdn.metro-group.com/fr/fr_pim_875085001001_02.png?format=jpg&quality=80&dpi=72",
-     "unite": "unité",
-     "new": 0,
-     "tag": "pour toi",
-     "eco": null
+     "format": "520 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     },
     {
      "id": 78,
@@ -427,10 +559,12 @@
      "barre": 7.35,
      "remise": 17,
      "image": "https://cdn.metro-group.com/fr/fr_pim_387592001001_01.png?format=jpg&quality=80&dpi=72",
-     "unite": "canette/bouteille",
-     "new": 0,
-     "tag": "pour toi",
-     "eco": null
+     "format": "35 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     },
     {
      "id": 81,
@@ -440,10 +574,12 @@
      "barre": 26.72,
      "remise": 17,
      "image": "https://cdn.metro-group.com/fr/fr_pim_875058001001_02.png?format=jpg&quality=80&dpi=72",
-     "unite": "unité",
-     "new": 0,
-     "tag": "pour toi",
-     "eco": null
+     "format": "530 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     },
     {
      "id": 86,
@@ -453,10 +589,27 @@
      "barre": 26.72,
      "remise": 17,
      "image": "https://cdn.metro-group.com/fr/fr_pim_882703001001_02.png?format=jpg&quality=80&dpi=72",
-     "unite": "unité",
-     "new": 0,
-     "tag": "pour toi",
-     "eco": null
+     "format": "520 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
+    },
+    {
+     "id": 100,
+     "name": "Ballon Pub Ballons 30 cm bleu/blanc/rouge x 100",
+     "source": "metro",
+     "prix": 0.09,
+     "barre": 10.26,
+     "remise": 17,
+     "image": "https://cdn.metro-group.com/fr/fr_pim_266793001001_01.png?format=jpg&quality=80&dpi=72",
+     "format": "",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     }
    ]
   }
