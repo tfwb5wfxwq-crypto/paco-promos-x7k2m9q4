@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T19:35",
- "updated_human": "mercredi 17 juin à 19h35",
+ "updated_iso": "2026-06-17T20:00",
+ "updated_human": "mercredi 17 juin à 20h00",
  "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 16h03",
  "magasin": "Metro Nanterre + Degrenne",
@@ -24,7 +24,9 @@
       "mesure": 17.23,
       "unit": "kg",
       "format": "70 g",
-      "image": "img/b13fbf5d474f0fc6.png"
+      "image": "img/b13fbf5d474f0fc6.png",
+      "colisage": 12,
+      "prix_carton": 14.47
      },
      "degrenne": {
       "id": 267,
@@ -33,7 +35,9 @@
       "mesure": 9.21,
       "unit": "kg",
       "format": "165 g",
-      "image": "img/e571419c95237636.png"
+      "image": "img/e571419c95237636.png",
+      "colisage": 19,
+      "prix_carton": 28.88
      },
      "cheaper": "degrenne",
      "pct": 47,
@@ -51,7 +55,9 @@
       "mesure": 8.13,
       "unit": "kg",
       "format": "9 × 200 g",
-      "image": "img/a113287d1a519c4a.png"
+      "image": "img/a113287d1a519c4a.png",
+      "colisage": null,
+      "prix_carton": null
      },
      "degrenne": {
       "id": 219,
@@ -60,7 +66,9 @@
       "mesure": 8.2,
       "unit": "kg",
       "format": "3 × 200 g",
-      "image": "img/4f0735adc0c304d8.png"
+      "image": "img/4f0735adc0c304d8.png",
+      "colisage": 13,
+      "prix_carton": 63.96
      },
      "cheaper": "metro",
      "pct": 1,
@@ -78,7 +86,9 @@
       "mesure": 46.34,
       "unit": "L",
       "format": "70 cl",
-      "image": "img/c14b9655e0f5bf84.png"
+      "image": "img/c14b9655e0f5bf84.png",
+      "colisage": null,
+      "prix_carton": null
      },
      "degrenne": {
       "id": 233,
@@ -87,7 +97,9 @@
       "mesure": 44.07,
       "unit": "L",
       "format": "70 cl",
-      "image": "img/3412869bc81a6c29.png"
+      "image": "img/3412869bc81a6c29.png",
+      "colisage": 6,
+      "prix_carton": 185.1
      },
      "cheaper": "degrenne",
      "pct": 5,

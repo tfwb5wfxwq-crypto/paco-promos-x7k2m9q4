@@ -92,6 +92,10 @@
   .tag.best{background:rgba(44,48,56,.92); color:#fff}
   .tag.warn{background:rgba(176,106,22,.18); color:var(--amber)}
   .pmes{font-size:11px; color:var(--faint); margin-top:3px}
+  .cond{display:inline-flex; align-items:center; gap:5px; margin-top:6px; font-size:11.5px; font-weight:650; color:var(--ink);
+        background:rgba(255,255,255,.6); border:1px solid var(--stroke); padding:4px 9px; border-radius:8px}
+  .cond b{font-weight:750}
+  .cc-cond{margin-top:5px; font-size:10.5px; font-weight:650; color:var(--ink)}
   .marque{font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--soft); margin-bottom:1px}
   /* COMPARATIF côte à côte */
   .clist{display:flex; flex-direction:column; gap:12px}
@@ -278,6 +282,7 @@ function cardHTML(it){
       <div class="fmt">${it.format?it.format+' · ':''}<span class="srcx ${it.source}">${it.source==='degrenne'?'Degrenne':'Metro'}</span></div>
       <div class="prow"><span class="pnow">${eur(it.prix)}</span><span class="punit">${it.unit_noun||''}</span>${old}</div>
       ${it.prix_mesure?`<div class="pmes">soit ${eur(it.prix_mesure)}/${it.mesure_unit}${it.prix_ttc?' · '+eur(it.prix_ttc)+' TTC':''}</div>`:''}
+      ${it.colisage?`<div class="cond">📦 Vendu par carton de <b>${it.colisage}</b> · <b>${eur(it.prix_carton)}</b> le carton</div>`:''}
       <div class="meta">${metas}</div>
       ${ctrl(it)}
     </div></div>`;
@@ -291,6 +296,7 @@ function compareCardHTML(c){
       <div class="cc-pname">${s.name}</div>
       ${s.format?`<div class="cc-qty">📦 ${s.format}</div>`:''}
       <div class="cc-px">${eur(s.prix)}<span class="cc-pu"> /pièce</span></div>${s.mesure?`<div class="cc-mes">${eur(s.mesure)}/${s.unit}</div>`:''}
+      ${s.colisage?`<div class="cc-cond">📦 carton de <b>${s.colisage}</b> · ${eur(s.prix_carton)}</div>`:''}
       <div class="cc-add">＋ Ajouter 1</div></div>`;
   const ch=c.cheaper==='metro'?'Metro':'Degrenne';
   const kb=same?`<span class="cc-kind same">✅ Même produit</span>`:`<span class="cc-kind alt">≈ Alternatif à comparer</span>`;
