@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T14:24",
- "updated_human": "mercredi 17 juin à 14h24",
+ "updated_iso": "2026-06-17T15:32",
+ "updated_human": "mercredi 17 juin à 15h32",
  "updated_metro": "mercredi 17 juin à 10h20",
  "updated_degrenne": "mercredi 17 juin à 10h20",
  "magasin": "Metro Nanterre + Degrenne",
@@ -44,7 +44,7 @@
      "sous_habituel": null
     },
     {
-     "id": 138,
+     "id": 131,
      "name": "Esselte Agrafeuse Rapid Maxi SP 19 rose",
      "source": "metro",
      "prix": 17.37,
@@ -60,7 +60,7 @@
      "sous_habituel": null
     },
     {
-     "id": 179,
+     "id": 172,
      "name": "SAN MARTIN Cheesecake framboise 1450 g Granderroble",
      "source": "metro",
      "prix": 16.74,
@@ -124,7 +124,7 @@
      "sous_habituel": null
     },
     {
-     "id": 146,
+     "id": 139,
      "name": "Yushan Signature Whisky Blended Malt 40° 70 cl sous étui",
      "source": "metro",
      "prix": 23.74,
@@ -140,7 +140,7 @@
      "sous_habituel": null
     },
     {
-     "id": 159,
+     "id": 152,
      "name": "Brewdog Bière blonde sans alcool Punk AF 33 cl verre perdu",
      "source": "metro",
      "prix": 1.24,
@@ -156,7 +156,7 @@
      "sous_habituel": null
     },
     {
-     "id": 175,
+     "id": 168,
      "name": "Yamazakura Whisky Peated sous étui 46° 70 cl",
      "source": "metro",
      "prix": 32.89,
@@ -172,7 +172,7 @@
      "sous_habituel": null
     },
     {
-     "id": 166,
+     "id": 159,
      "name": "Acial Vestiaire industrie propre 1 porte bleu/gris L.30 cm ",
      "source": "metro",
      "prix": 128.0,
@@ -188,7 +188,7 @@
      "sous_habituel": null
     },
     {
-     "id": 164,
+     "id": 157,
      "name": "Esselte Agrafeuse Stand Up F20 noir",
      "source": "metro",
      "prix": 8.72,
@@ -212,7 +212,7 @@
    "sub": "Sous ton prix d'achat habituel",
    "items": [
     {
-     "id": 272,
+     "id": 271,
      "name": "165g pringles cheese & oignon",
      "source": "degrenne",
      "prix": 1.52,
@@ -228,7 +228,7 @@
      "sous_habituel": 13
     },
     {
-     "id": 370,
+     "id": 369,
      "name": "165g pringles cheese & oignon",
      "source": "degrenne",
      "prix": 1.52,
@@ -244,7 +244,7 @@
      "sous_habituel": 13
     },
     {
-     "id": 299,
+     "id": 298,
      "name": "75cl rose plaisir'ose mediterr",
      "source": "degrenne",
      "prix": 3.07,
@@ -260,7 +260,7 @@
      "sous_habituel": 12
     },
     {
-     "id": 397,
+     "id": 396,
      "name": "75cl rose plaisir'ose mediterr",
      "source": "degrenne",
      "prix": 3.07,
@@ -276,7 +276,7 @@
      "sous_habituel": 12
     },
     {
-     "id": 356,
+     "id": 355,
      "name": "Poche 33cl caprisun multivitam",
      "source": "degrenne",
      "prix": 0.83,
@@ -292,7 +292,7 @@
      "sous_habituel": 2
     },
     {
-     "id": 237,
+     "id": 236,
      "name": "*75cl bio minervois dom.reze 2021",
      "source": "degrenne",
      "prix": 3.65,
@@ -308,7 +308,7 @@
      "sous_habituel": 1
     },
     {
-     "id": 337,
+     "id": 336,
      "name": "*75cl bio minervois dom.reze 2021",
      "source": "degrenne",
      "prix": 3.65,
@@ -396,7 +396,7 @@
      "sous_habituel": 4
     },
     {
-     "id": 301,
+     "id": 300,
      "name": "75cl rose ouf de toi mediterra 2025 igp",
      "source": "degrenne",
      "prix": 3.85,
@@ -428,7 +428,7 @@
      "sous_habituel": 10
     },
     {
-     "id": 234,
+     "id": 233,
      "name": "70cl whisky glenfidich 12a.40°",
      "source": "degrenne",
      "prix": 30.85,
@@ -444,7 +444,7 @@
      "sous_habituel": null
     },
     {
-     "id": 259,
+     "id": 258,
      "name": "Poche 33cl caprisun multivitam",
      "source": "degrenne",
      "prix": 0.83,
@@ -468,7 +468,7 @@
    "sub": "Tes produits réguliers en baisse",
    "items": [
     {
-     "id": 205,
+     "id": 198,
      "name": "ABSOLUT Vodka aromatisée mangue 38% 70 cl",
      "source": "metro",
      "prix": 12.55,
@@ -500,7 +500,7 @@
      "sous_habituel": 30
     },
     {
-     "id": 125,
+     "id": 118,
      "name": "BARON DE LESTAC Bordeaux Élevé en fûts de chêne fontaine à vin 3 L",
      "source": "metro",
      "prix": 10.47,
@@ -548,7 +548,7 @@
      "sous_habituel": 11
     },
     {
-     "id": 129,
+     "id": 122,
      "name": "Don Julio Tequila reposado 38° 70 cl",
      "source": "metro",
      "prix": 44.24,
@@ -580,7 +580,7 @@
      "sous_habituel": null
     },
     {
-     "id": 150,
+     "id": 143,
      "name": "Sobieski Vodka 37.5° 70 cl",
      "source": "metro",
      "prix": 6.98,
@@ -668,7 +668,7 @@
    "sub": "Bons plans dans tes rayons",
    "items": [
     {
-     "id": 167,
+     "id": 160,
      "name": "Caraibos Nectar de pêche 1 L verre perdu",
      "source": "metro",
      "prix": 2.31,
@@ -684,7 +684,7 @@
      "sous_habituel": null
     },
     {
-     "id": 169,
+     "id": 162,
      "name": "aro Essuie mains blanc 50 x 70 cm x 3",
      "source": "metro",
      "prix": 7.37,
@@ -700,7 +700,7 @@
      "sous_habituel": null
     },
     {
-     "id": 176,
+     "id": 169,
      "name": "Caraibos Boisson au lait de coco Lococo 1 L verre perdu",
      "source": "metro",
      "prix": 2.35,
@@ -716,7 +716,7 @@
      "sous_habituel": null
     },
     {
-     "id": 190,
+     "id": 183,
      "name": "Ballon Pub Pompe double action",
      "source": "metro",
      "prix": 5.13,
