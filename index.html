@@ -281,6 +281,7 @@ function cardHTML(it){
   const old = it.barre ? `<span class="pold">${eur(it.barre)}</span>` : '';
   let metas='';
   if(it.super) metas+=`<span class="tag super">💥 Super affaire</span>`;
+  if(it.sous_habituel && it.sous_habituel>=20) metas+=`<span class="tag super">🔥 Bon plan</span>`;
   if(it.plus_bas_j!=null && it.plus_bas_j>=7) metas+=`<span class="tag super">📉 Au plus bas depuis ${it.plus_bas_j} j</span>`;
   const dl=daysLeft(it.ends_date);
   if(dl!=null){ const soon=dl<=2; metas+=`<span class="tag ends${soon?' soon':''}">⏳ ${endsLabel(dl)}</span>`; }
