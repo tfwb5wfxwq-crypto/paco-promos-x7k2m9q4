@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T16:06",
- "updated_human": "mercredi 17 juin à 16h06",
+ "updated_iso": "2026-06-17T16:07",
+ "updated_human": "mercredi 17 juin à 16h07",
  "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 16h03",
  "magasin": "Metro Nanterre + Degrenne",
@@ -83,30 +83,6 @@
      "basis": "mesure",
      "unit": "L",
      "eco": 1.59
-    },
-    {
-     "name": "Sobieski Vodka 37.5° 70 cl",
-     "image": "img/0880910a037ba0af.png",
-     "marque": "Sobieski",
-     "metro": {
-      "id": 143,
-      "prix": 6.98,
-      "mesure": 9.97,
-      "unit": "L",
-      "format": "70 cl"
-     },
-     "degrenne": {
-      "id": 265,
-      "prix": 25.79,
-      "mesure": 36.84,
-      "unit": "L",
-      "format": "70 cl"
-     },
-     "cheaper": "metro",
-     "pct": 73,
-     "basis": "mesure",
-     "unit": "L",
-     "eco": 18.81
     }
    ]
   },
