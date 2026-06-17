@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T20:44",
- "updated_human": "mercredi 17 juin à 20h44",
+ "updated_iso": "2026-06-17T21:16",
+ "updated_human": "mercredi 17 juin à 21h16",
  "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 16h03",
  "magasin": "Metro Nanterre + Degrenne",
@@ -115,17 +115,43 @@
    "type": "habitudes",
    "items": [
     {
-     "name": "6x50cl cristaline jus fraise",
-     "categorie": "eau",
-     "unit": "L",
-     "codis_prix": 3.234,
-     "codis_mes": 1.078,
-     "metro_prix": 0.544,
-     "metro_mes": 1.088,
+     "name": "S.22 nutella biscuits 304g",
+     "categorie": "confiserie",
+     "unit": "kg",
+     "codis_prix": 3.311,
+     "codis_mes": 10.891,
+     "metro_prix": 3.65,
+     "metro_mes": 12.007,
+     "moins_cher": "codis",
+     "ecart": 9,
+     "codis_nc": 42,
+     "metro_nc": 3
+    },
+    {
+     "name": "P5x2 biscuit kinder cards 128g",
+     "categorie": "confiserie",
+     "unit": "kg",
+     "codis_prix": 2.015,
+     "codis_mes": 15.742,
+     "metro_prix": 2.14,
+     "metro_mes": 16.719,
+     "moins_cher": "codis",
+     "ecart": 6,
+     "codis_nc": 24,
+     "metro_nc": 3
+    },
+    {
+     "name": "P.18 barq.chocolat 120g lu",
+     "categorie": "confiserie",
+     "unit": "kg",
+     "codis_prix": 1.095,
+     "codis_mes": 9.125,
+     "metro_prix": 1.103,
+     "metro_mes": 9.192,
      "moins_cher": "codis",
      "ecart": 1,
-     "codis_nc": 47,
-     "metro_nc": 11
+     "codis_nc": 22,
+     "metro_nc": 3
     },
     {
      "name": "L.6x20cl lait fraise candy up",
@@ -154,19 +180,6 @@
      "metro_nc": 7
     },
     {
-     "name": "Cake anglais 400g brossard",
-     "categorie": "autre",
-     "unit": "kg",
-     "codis_prix": 3.176,
-     "codis_mes": 7.94,
-     "metro_prix": 3.32,
-     "metro_mes": 8.3,
-     "moins_cher": "codis",
-     "ecart": 4,
-     "codis_nc": 10,
-     "metro_nc": 3
-    },
-    {
      "name": "6 mini-babybel rge 132g",
      "categorie": "cremerie",
      "unit": "kg",
@@ -178,6 +191,19 @@
      "ecart": 17,
      "codis_nc": 10,
      "metro_nc": 20
+    },
+    {
+     "name": "Cake anglais 400g brossard",
+     "categorie": "autre",
+     "unit": "kg",
+     "codis_prix": 3.176,
+     "codis_mes": 7.94,
+     "metro_prix": 3.32,
+     "metro_mes": 8.3,
+     "moins_cher": "codis",
+     "ecart": 4,
+     "codis_nc": 10,
+     "metro_nc": 3
     },
     {
      "name": "35cl whisky j.daniel 40°",
@@ -219,6 +245,32 @@
      "metro_nc": 5
     },
     {
+     "name": "6x180g p tit yop fraise",
+     "categorie": "cremerie",
+     "unit": "kg",
+     "codis_prix": 2.76,
+     "codis_mes": 2.556,
+     "metro_prix": 2.672,
+     "metro_mes": 2.474,
+     "moins_cher": "metro",
+     "ecart": 3,
+     "codis_nc": 2,
+     "metro_nc": 14
+    },
+    {
+     "name": "6x180g p tit yop framboise",
+     "categorie": "cremerie",
+     "unit": "kg",
+     "codis_prix": 2.76,
+     "codis_mes": 2.556,
+     "metro_prix": 2.626,
+     "metro_mes": 2.431,
+     "moins_cher": "metro",
+     "ecart": 5,
+     "codis_nc": 2,
+     "metro_nc": 15
+    },
+    {
      "name": "70cl vodka poliakov 37°5",
      "categorie": "spiritueux",
      "unit": "L",
@@ -245,30 +297,17 @@
      "metro_nc": 7
     },
     {
-     "name": "70cl bailey-irish cream 17°",
-     "categorie": "cremerie",
-     "unit": "L",
-     "codis_prix": 12.04,
-     "codis_mes": 17.2,
-     "metro_prix": 11.16,
-     "metro_mes": 15.943,
-     "moins_cher": "metro",
-     "ecart": 7,
-     "codis_nc": 1,
-     "metro_nc": 1
-    },
-    {
-     "name": "70cl rhum captain morgan 35°",
+     "name": "70cl whisky grant s 40°",
      "categorie": "autre",
      "unit": "L",
-     "codis_prix": 11.91,
-     "codis_mes": 17.014,
-     "metro_prix": 9.64,
-     "metro_mes": 13.771,
+     "codis_prix": 11.05,
+     "codis_mes": 15.786,
+     "metro_prix": 10.48,
+     "metro_mes": 14.971,
      "moins_cher": "metro",
-     "ecart": 19,
+     "ecart": 5,
      "codis_nc": 1,
-     "metro_nc": 3
+     "metro_nc": 5
     },
     {
      "name": "Vache qui rit 12 portions 192g 19%mg",
@@ -297,17 +336,30 @@
      "metro_nc": 10
     },
     {
-     "name": "70cl whisky grant s 40°",
+     "name": "70cl rhum captain morgan 35°",
      "categorie": "autre",
      "unit": "L",
-     "codis_prix": 11.05,
-     "codis_mes": 15.786,
-     "metro_prix": 10.48,
-     "metro_mes": 14.971,
+     "codis_prix": 11.91,
+     "codis_mes": 17.014,
+     "metro_prix": 9.64,
+     "metro_mes": 13.771,
      "moins_cher": "metro",
-     "ecart": 5,
+     "ecart": 19,
      "codis_nc": 1,
-     "metro_nc": 5
+     "metro_nc": 3
+    },
+    {
+     "name": "70cl bailey-irish cream 17°",
+     "categorie": "cremerie",
+     "unit": "L",
+     "codis_prix": 12.04,
+     "codis_mes": 17.2,
+     "metro_prix": 11.16,
+     "metro_mes": 15.943,
+     "moins_cher": "metro",
+     "ecart": 7,
+     "codis_nc": 1,
+     "metro_nc": 1
     }
    ]
   },
