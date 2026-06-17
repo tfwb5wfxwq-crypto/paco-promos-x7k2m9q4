@@ -59,11 +59,13 @@
   .card{border-radius:22px; overflow:hidden; display:flex; flex-direction:column;
         background:var(--glass); -webkit-backdrop-filter:var(--blur); backdrop-filter:var(--blur);
         border:1px solid var(--stroke); box-shadow:var(--gloss), var(--lift)}
-  .ph{position:relative; height:110px; display:flex; align-items:center; justify-content:center; padding:8px;
+  .ph{position:relative; height:110px; display:flex; align-items:center; justify-content:center; padding:8px; overflow:hidden;
       background:linear-gradient(160deg, rgba(255,255,255,.55), rgba(255,255,255,.18))}
-  .ph img{max-width:78%; max-height:92px; object-fit:contain; filter:drop-shadow(0 5px 8px rgba(30,45,35,.12))}
-  .ph .fb{display:flex; flex-direction:column; align-items:center; gap:5px; color:var(--faint)}
-  .ph .fb .e{font-size:28px} .ph .fb .f{font-size:11px; font-weight:600}
+  .ph img.pim{position:relative; z-index:1; max-width:78%; max-height:92px; object-fit:contain; filter:drop-shadow(0 5px 8px rgba(30,45,35,.12))}
+  .ph img.pim.dead{display:none}
+  .ph .fb{position:absolute; inset:0; display:none; flex-direction:column; align-items:center; justify-content:center; gap:5px; color:var(--faint)}
+  .ph .fb.show{display:flex} .ph img.pim.dead ~ .fb{display:flex}
+  .ph .fb .e{font-size:30px} .ph .fb .f{font-size:11px; font-weight:600}
   .tl{position:absolute; top:10px; left:10px; display:flex; gap:5px}
   .tr{position:absolute; top:10px; right:10px}
   .pill{font-size:11px; font-weight:700; padding:4px 9px; border-radius:9px; line-height:1; box-shadow:var(--gloss)}
@@ -120,8 +122,11 @@
       background:var(--glass); border:1px solid var(--stroke); box-shadow:var(--gloss);
       -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px)}
   .ci .th{width:50px; height:50px; flex:none; border-radius:11px; background:rgba(255,255,255,.6); display:flex;
-          align-items:center; justify-content:center; overflow:hidden}
-  .ci .th img{max-width:100%; max-height:100%; object-fit:contain} .ci .th .e{font-size:24px; opacity:.5}
+          align-items:center; justify-content:center; overflow:hidden; position:relative}
+  .ci .th img.pim{position:relative; z-index:1; max-width:100%; max-height:100%; object-fit:contain}
+  .ci .th img.pim.dead{display:none}
+  .ci .th .e{position:absolute; inset:0; display:none; align-items:center; justify-content:center; font-size:24px; opacity:.5}
+  .ci .th .e.show{display:flex} .ci .th img.pim.dead ~ .e{display:flex}
   .ci .info{flex:1; min-width:0}
   .ci .nm{font-size:13px; font-weight:600; line-height:1.25; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden}
   .ci .mt{font-size:11px; color:var(--soft); margin-top:3px; display:flex; align-items:center; gap:6px}
@@ -178,11 +183,10 @@ const eur = n => (Math.round((n||0)*100)/100).toFixed(2).replace('.',',')+' €'
 let DATA=null, cart={};
 const SRC = s => s==='metro' ? 'METRO' : (s==='degrenne'?'DEGRENNE':s.toUpperCase());
 
-function fallback(it){ return `<div class="fb"><span class="e">🧺</span><span class="f">${it.format||''}</span></div>`; }
 function imgBox(it){
-  if(!it.image) return fallback(it);
-  return `<img loading="lazy" src="${it.image}" alt="" onerror="this.parentNode.innerHTML='`+
-         fallback(it).replace(/'/g,"\\'")+`'">`;
+  const fb = `<div class="fb"><span class="e">🧺</span><span class="f">${it.format||''}</span></div>`;
+  if(!it.image) return `<div class="fb show"><span class="e">🧺</span><span class="f">${it.format||''}</span></div>`;
+  return `<img class="pim" loading="lazy" src="${it.image}" alt="" onerror="this.classList.add('dead')">`+fb;
 }
 function ctrl(it){
   const c=cart[it.id];
@@ -251,7 +255,7 @@ function renderCart(){
   if(!ks.length){ list.innerHTML=`<div class="empty"><span class="e">🧺</span>Ton panier est vide.<br>Ajoute des promos pour démarrer.</div>`;
     box.style.display='none'; btn.style.display='none'; return; }
   list.innerHTML=ks.map(k=>{ const {item,qty}=cart[k];
-    const th=item.image?`<img src="${item.image}" onerror="this.parentNode.innerHTML='<span class=e>🧺</span>'">`:`<span class="e">🧺</span>`;
+    const th=item.image?`<img class="pim" src="${item.image}" onerror="this.classList.add('dead')"><span class="e">🧺</span>`:`<span class="e show">🧺</span>`;
     return `<div class="ci"><div class="th">${th}</div>
       <div class="info"><div class="nm">${item.name}</div>
         <div class="mt"><span class="src ${item.source}">${SRC(item.source)}</span>${eur(item.prix)} ${item.unit_noun||''}</div></div>
