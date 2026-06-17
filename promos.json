@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T15:45",
- "updated_human": "mercredi 17 juin à 15h45",
+ "updated_iso": "2026-06-17T15:46",
+ "updated_human": "mercredi 17 juin à 15h46",
  "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 10h20",
  "magasin": "Metro Nanterre + Degrenne",
@@ -290,7 +290,7 @@
      "prix": 1.52,
      "barre": null,
      "remise": 0,
-     "image": null,
+     "image": "img/b13fbf5d474f0fc6.png",
      "format": "165 g",
      "unit_noun": "l'unité",
      "ends": null,
@@ -303,7 +303,11 @@
      "prix_ttc": null,
      "prix_mesure": null,
      "mesure_unit": null,
-     "compare": null
+     "compare": {
+      "source": "metro",
+      "prix": 1.21,
+      "cheaper_here": false
+     }
     },
     {
      "id": 369,
@@ -312,7 +316,7 @@
      "prix": 1.52,
      "barre": null,
      "remise": 0,
-     "image": null,
+     "image": "img/b13fbf5d474f0fc6.png",
      "format": "165 g",
      "unit_noun": "l'unité",
      "ends": null,
@@ -325,7 +329,11 @@
      "prix_ttc": null,
      "prix_mesure": null,
      "mesure_unit": null,
-     "compare": null
+     "compare": {
+      "source": "metro",
+      "prix": 1.21,
+      "cheaper_here": false
+     }
     },
     {
      "id": 298,
@@ -584,7 +592,7 @@
      "prix": 30.85,
      "barre": null,
      "remise": 0,
-     "image": null,
+     "image": "img/c14b9655e0f5bf84.png",
      "format": "70 cl",
      "unit_noun": "la bouteille",
      "ends": null,
@@ -597,7 +605,11 @@
      "prix_ttc": null,
      "prix_mesure": null,
      "mesure_unit": null,
-     "compare": null
+     "compare": {
+      "source": "metro",
+      "prix": 32.44,
+      "cheaper_here": true
+     }
     },
     {
      "id": 258,
@@ -781,7 +793,11 @@
      "prix_ttc": 38.93,
      "prix_mesure": 46.34,
      "mesure_unit": "L",
-     "compare": null
+     "compare": {
+      "source": "degrenne",
+      "prix": 30.85,
+      "cheaper_here": false
+     }
     },
     {
      "id": 143,
@@ -803,7 +819,11 @@
      "prix_ttc": 8.38,
      "prix_mesure": 9.97,
      "mesure_unit": "L",
-     "compare": null
+     "compare": {
+      "source": "degrenne",
+      "prix": 25.79,
+      "cheaper_here": true
+     }
     },
     {
      "id": 82,
