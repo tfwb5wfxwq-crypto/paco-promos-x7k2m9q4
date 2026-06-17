@@ -76,6 +76,7 @@
   .name{font-size:13.5px; font-weight:600; line-height:1.3; display:-webkit-box; -webkit-line-clamp:2;
         -webkit-box-orient:vertical; overflow:hidden; min-height:35px}
   .fmt{font-size:11.5px; color:var(--soft); margin-top:3px}
+  .srcx{font-weight:700} .srcx.metro{color:var(--metro)} .srcx.degrenne{color:var(--degrenne)}
   .prow{display:flex; align-items:baseline; gap:7px; margin-top:9px; flex-wrap:wrap}
   .pnow{font-size:20px; font-weight:750; letter-spacing:-.025em}
   .punit{font-size:11px; color:var(--soft); font-weight:500}
@@ -202,11 +203,10 @@ function cardHTML(it){
   if(it.sous_habituel) metas+=`<span class="tag eco">−${it.sous_habituel}% sous ton prix habituel</span>`;
   if(it.reason) metas+=`<span class="reason"><span class="ck">✓</span><span>${it.reason}</span></span>`;
   return `<div class="card" id="c${it.id}">
-    <div class="ph">${imgBox(it)}<div class="tl">${badges}</div>
-      <div class="tr"><span class="src ${it.source}">${SRC(it.source)}</span></div></div>
+    <div class="ph">${imgBox(it)}<div class="tl">${badges}</div></div>
     <div class="cbody">
       <div class="name">${it.name}</div>
-      <div class="fmt">${it.format||'&nbsp;'}</div>
+      <div class="fmt">${it.format?it.format+' · ':''}<span class="srcx ${it.source}">${it.source==='degrenne'?'Degrenne':'Metro'}</span></div>
       <div class="prow"><span class="pnow">${eur(it.prix)}</span><span class="punit">${it.unit_noun||''}</span>${old}</div>
       <div class="meta">${metas}</div>
       ${ctrl(it)}
