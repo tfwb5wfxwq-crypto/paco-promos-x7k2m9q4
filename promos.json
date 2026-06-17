@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T16:49",
- "updated_human": "mercredi 17 juin à 16h49",
+ "updated_iso": "2026-06-17T16:50",
+ "updated_human": "mercredi 17 juin à 16h50",
  "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 16h03",
  "magasin": "Metro Nanterre + Degrenne",
@@ -12,56 +12,6 @@
    "sub": "Le moins cher des deux, comparé au litre/kilo",
    "type": "compare",
    "items": [
-    {
-     "name": "Chivas Regal Whisky XV 15 ans 40% 70 cl",
-     "image": "img/c14b9655e0f5bf84.png",
-     "marque": "Chivas Regal",
-     "kind": "identique",
-     "metro": {
-      "id": 70,
-      "name": "Chivas Regal Whisky XV 15 ans 40% 70 cl",
-      "prix": 32.44,
-      "mesure": 46.34,
-      "unit": "L",
-      "format": "70 cl"
-     },
-     "degrenne": {
-      "id": 232,
-      "name": "70cl whisky glenfidich 12a.40°",
-      "prix": 30.85,
-      "mesure": 44.07,
-      "unit": "L",
-      "format": "70 cl"
-     },
-     "cheaper": "degrenne",
-     "pct": 5,
-     "unit": "L"
-    },
-    {
-     "name": "Sobieski Vodka 37.5° 70 cl",
-     "image": "img/0880910a037ba0af.png",
-     "marque": "Sobieski",
-     "kind": "identique",
-     "metro": {
-      "id": 143,
-      "name": "Sobieski Vodka 37.5° 70 cl",
-      "prix": 6.98,
-      "mesure": 9.97,
-      "unit": "L",
-      "format": "70 cl"
-     },
-     "degrenne": {
-      "id": 265,
-      "name": "70cl vodka noix coco 37°5ciroc",
-      "prix": 25.79,
-      "mesure": 36.84,
-      "unit": "L",
-      "format": "70 cl"
-     },
-     "cheaper": "metro",
-     "pct": 73,
-     "unit": "L"
-    },
     {
      "name": "Pringles crème oignon 70 g",
      "image": "img/b13fbf5d474f0fc6.png",
@@ -111,6 +61,56 @@
      "cheaper": "metro",
      "pct": 1,
      "unit": "kg"
+    },
+    {
+     "name": "Chivas Regal Whisky XV 15 ans 40% 70 cl",
+     "image": "img/c14b9655e0f5bf84.png",
+     "marque": "Chivas Regal",
+     "kind": "alternatif",
+     "metro": {
+      "id": 70,
+      "name": "Chivas Regal Whisky XV 15 ans 40% 70 cl",
+      "prix": 32.44,
+      "mesure": 46.34,
+      "unit": "L",
+      "format": "70 cl"
+     },
+     "degrenne": {
+      "id": 232,
+      "name": "70cl whisky glenfidich 12a.40°",
+      "prix": 30.85,
+      "mesure": 44.07,
+      "unit": "L",
+      "format": "70 cl"
+     },
+     "cheaper": "degrenne",
+     "pct": 5,
+     "unit": "L"
+    },
+    {
+     "name": "Sobieski Vodka 37.5° 70 cl",
+     "image": "img/0880910a037ba0af.png",
+     "marque": "Sobieski",
+     "kind": "alternatif",
+     "metro": {
+      "id": 143,
+      "name": "Sobieski Vodka 37.5° 70 cl",
+      "prix": 6.98,
+      "mesure": 9.97,
+      "unit": "L",
+      "format": "70 cl"
+     },
+     "degrenne": {
+      "id": 265,
+      "name": "70cl vodka noix coco 37°5ciroc",
+      "prix": 25.79,
+      "mesure": 36.84,
+      "unit": "L",
+      "format": "70 cl"
+     },
+     "cheaper": "metro",
+     "pct": 73,
+     "unit": "L"
     }
    ]
   },
