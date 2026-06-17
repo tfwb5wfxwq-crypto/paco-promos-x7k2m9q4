@@ -192,9 +192,23 @@ function endsLabel(dl){ return dl<=0 ? 'Dernier jour' : (dl===1 ? "Plus qu'1 jou
 let DATA=null, cart={};
 const SRC = s => s==='metro' ? 'METRO' : (s==='degrenne'?'DEGRENNE':s.toUpperCase());
 
+function rayon(n){ n=(n||'').toLowerCase();
+  const P=[['🍺','biere bière heineken grimbergen leffe corona desperados kro pelforth blonde delirium'],
+    ['🥃','vodka whisky rhum gin tequila absolut chivas jack ricard pastis cognac don julio'],
+    ['🍷','vin igp rosé rose bordeaux dauphins cellier chardonnay tropez champagne baron mouton'],
+    ['⚡','red bull energ monster'],['🥤','coca soda pepsi orangina oasis lipton fanta sprite candy'],
+    ['🧃','capri jus nectar pulco'],['🥐','croissant pain brioche chocolatine viennoiserie rochambeau'],
+    ['🍫','chocolat kit kat twix snickers lion bounty mars milka kinder oreo nutella côte chenet'],
+    ['🧀','cheddar gouda emmental fromage philadelphia mozzarella comté'],
+    ['🍪','biscuit gateau gaufre pringles chips doritos lays granola palmito lu'],
+    ['🧴','raid nettoyant lessive gel javel detergent k2r spray beckmann spontex']];
+  for(const it of P){ if(it[1].split(' ').some(k=>n.includes(k))) return it[0]; }
+  return '🛒';
+}
 function imgBox(it){
-  const fb = `<div class="fb"><span class="e">🧺</span><span class="f">${it.format||''}</span></div>`;
-  if(!it.image) return `<div class="fb show"><span class="e">🧺</span><span class="f">${it.format||''}</span></div>`;
+  const emo=rayon(it.name);
+  const fb = `<div class="fb"><span class="e">${emo}</span><span class="f">${it.format||''}</span></div>`;
+  if(!it.image) return `<div class="fb show"><span class="e">${emo}</span><span class="f">${it.format||''}</span></div>`;
   return `<img class="pim" loading="lazy" src="${it.image}" alt="" onerror="this.classList.add('dead')">`+fb;
 }
 function ctrl(it){
