@@ -88,6 +88,10 @@
        padding:4px 9px; border-radius:9px; -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); box-shadow:var(--gloss)}
   .tag.ends{background:rgba(238,180,90,.28); color:var(--amber)} .tag.ends.soon{background:rgba(214,56,58,.18); color:var(--promo)}
   .tag.eco{background:rgba(15,122,79,.15); color:var(--green)}
+  .tag.best{background:rgba(15,122,79,.92); color:#fff}
+  .tag.warn{background:rgba(176,106,22,.18); color:var(--amber)}
+  .pmes{font-size:11px; color:var(--faint); margin-top:3px}
+  .marque{font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--soft); margin-bottom:1px}
   .reason{font-size:11.5px; color:var(--soft); display:flex; gap:5px; align-items:flex-start; line-height:1.3}
   .reason .ck{color:var(--green); font-weight:800}
   .add{margin-top:12px; border:0; width:100%; padding:12px; border-radius:13px; color:#fff; font-size:14px; font-weight:650;
@@ -224,6 +228,10 @@ function cardHTML(it){
   const dl=daysLeft(it.ends_date);
   if(dl!=null){ const soon=dl<=2; metas+=`<span class="tag ends${soon?' soon':''}">⏳ ${endsLabel(dl)}</span>`; }
   else if(it.ends){ metas+=`<span class="tag ends">⏳ ${it.ends}</span>`; }
+  if(it.compare){ const oth=it.compare.source==='degrenne'?'Degrenne':'Metro';
+    metas += it.compare.cheaper_here
+      ? `<span class="tag best">✓ Le moins cher (vs ${eur(it.compare.prix)} ${oth})</span>`
+      : `<span class="tag warn">↘ Moins cher chez ${oth} : ${eur(it.compare.prix)}</span>`; }
   if(it.sous_habituel) metas+=`<span class="tag eco">−${it.sous_habituel}% sous ton prix habituel</span>`;
   if(it.reason) metas+=`<span class="reason"><span class="ck">✓</span><span>${it.reason}</span></span>`;
   return `<div class="card" id="c${it.id}">

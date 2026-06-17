@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T15:43",
- "updated_human": "mercredi 17 juin à 15h43",
+ "updated_iso": "2026-06-17T15:45",
+ "updated_human": "mercredi 17 juin à 15h45",
  "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 10h20",
  "magasin": "Metro Nanterre + Degrenne",
@@ -30,7 +30,8 @@
      "contenance": "750 ml",
      "prix_ttc": 2.26,
      "prix_mesure": 2.51,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 40,
@@ -51,7 +52,8 @@
      "contenance": "500 ml",
      "prix_ttc": 1.29,
      "prix_mesure": 2.15,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 131,
@@ -72,7 +74,8 @@
      "contenance": "227 g",
      "prix_ttc": 20.84,
      "prix_mesure": 76.52,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     },
     {
      "id": 172,
@@ -93,7 +96,8 @@
      "contenance": "1450 g",
      "prix_ttc": 17.66,
      "prix_mesure": 11.54,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     },
     {
      "id": 54,
@@ -114,7 +118,8 @@
      "contenance": "1980 ml",
      "prix_ttc": 7.11,
      "prix_mesure": 3.4,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 98,
@@ -135,7 +140,8 @@
      "contenance": "330 ml",
      "prix_ttc": 1.8,
      "prix_mesure": 4.55,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 84,
@@ -156,7 +162,8 @@
      "contenance": "400 g",
      "prix_ttc": 2.39,
      "prix_mesure": 5.67,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     },
     {
      "id": 139,
@@ -177,7 +184,8 @@
      "contenance": "700 ml",
      "prix_ttc": 28.49,
      "prix_mesure": 33.91,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 152,
@@ -198,7 +206,8 @@
      "contenance": "330 ml",
      "prix_ttc": 1.31,
      "prix_mesure": 3.76,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 168,
@@ -219,7 +228,8 @@
      "contenance": "700 ml",
      "prix_ttc": 39.47,
      "prix_mesure": 46.99,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 159,
@@ -240,7 +250,8 @@
      "contenance": "18000 g",
      "prix_ttc": 153.6,
      "prix_mesure": 7.11,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     },
     {
      "id": 157,
@@ -261,7 +272,8 @@
      "contenance": "145 g",
      "prix_ttc": 10.46,
      "prix_mesure": 60.14,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     }
    ]
   },
@@ -290,7 +302,8 @@
      "contenance": null,
      "prix_ttc": null,
      "prix_mesure": null,
-     "mesure_unit": null
+     "mesure_unit": null,
+     "compare": null
     },
     {
      "id": 369,
@@ -311,7 +324,8 @@
      "contenance": null,
      "prix_ttc": null,
      "prix_mesure": null,
-     "mesure_unit": null
+     "mesure_unit": null,
+     "compare": null
     },
     {
      "id": 298,
@@ -332,7 +346,8 @@
      "contenance": null,
      "prix_ttc": null,
      "prix_mesure": null,
-     "mesure_unit": null
+     "mesure_unit": null,
+     "compare": null
     },
     {
      "id": 396,
@@ -353,7 +368,8 @@
      "contenance": null,
      "prix_ttc": null,
      "prix_mesure": null,
-     "mesure_unit": null
+     "mesure_unit": null,
+     "compare": null
     },
     {
      "id": 355,
@@ -374,7 +390,8 @@
      "contenance": null,
      "prix_ttc": null,
      "prix_mesure": null,
-     "mesure_unit": null
+     "mesure_unit": null,
+     "compare": null
     },
     {
      "id": 236,
@@ -395,7 +412,8 @@
      "contenance": null,
      "prix_ttc": null,
      "prix_mesure": null,
-     "mesure_unit": null
+     "mesure_unit": null,
+     "compare": null
     },
     {
      "id": 336,
@@ -416,7 +434,8 @@
      "contenance": null,
      "prix_ttc": null,
      "prix_mesure": null,
-     "mesure_unit": null
+     "mesure_unit": null,
+     "compare": null
     }
    ]
   },
@@ -445,7 +464,8 @@
      "contenance": "700 ml",
      "prix_ttc": 13.26,
      "prix_mesure": 15.79,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 85,
@@ -466,7 +486,8 @@
      "contenance": "1000 ml",
      "prix_ttc": 3.94,
      "prix_mesure": 3.73,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 38,
@@ -487,7 +508,8 @@
      "contenance": "250 ml",
      "prix_ttc": 1.46,
      "prix_mesure": 4.88,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 67,
@@ -508,7 +530,8 @@
      "contenance": "1200 ml",
      "prix_ttc": 2.93,
      "prix_mesure": 2.32,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 300,
@@ -529,7 +552,8 @@
      "contenance": null,
      "prix_ttc": null,
      "prix_mesure": null,
-     "mesure_unit": null
+     "mesure_unit": null,
+     "compare": null
     },
     {
      "id": 62,
@@ -550,7 +574,8 @@
      "contenance": "42 g",
      "prix_ttc": 0.64,
      "prix_mesure": 14.33,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     },
     {
      "id": 233,
@@ -571,7 +596,8 @@
      "contenance": null,
      "prix_ttc": null,
      "prix_mesure": null,
-     "mesure_unit": null
+     "mesure_unit": null,
+     "compare": null
     },
     {
      "id": 258,
@@ -592,7 +618,8 @@
      "contenance": null,
      "prix_ttc": null,
      "prix_mesure": null,
-     "mesure_unit": null
+     "mesure_unit": null,
+     "compare": null
     }
    ]
   },
@@ -621,7 +648,8 @@
      "contenance": "700 ml",
      "prix_ttc": 15.06,
      "prix_mesure": 17.93,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 44,
@@ -642,7 +670,8 @@
      "contenance": "750 ml",
      "prix_ttc": 3.02,
      "prix_mesure": 3.35,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 118,
@@ -663,7 +692,8 @@
      "contenance": "3000 ml",
      "prix_ttc": 12.56,
      "prix_mesure": 3.49,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 95,
@@ -684,7 +714,8 @@
      "contenance": "700 ml",
      "prix_ttc": 16.66,
      "prix_mesure": 19.83,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 106,
@@ -705,7 +736,8 @@
      "contenance": "700 ml",
      "prix_ttc": 49.38,
      "prix_mesure": 58.79,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 122,
@@ -726,7 +758,8 @@
      "contenance": "700 ml",
      "prix_ttc": 53.09,
      "prix_mesure": 63.2,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 70,
@@ -747,7 +780,8 @@
      "contenance": "700 ml",
      "prix_ttc": 38.93,
      "prix_mesure": 46.34,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 143,
@@ -768,7 +802,8 @@
      "contenance": "700 ml",
      "prix_ttc": 8.38,
      "prix_mesure": 9.97,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 82,
@@ -789,7 +824,8 @@
      "contenance": "750 ml",
      "prix_ttc": 2.22,
      "prix_mesure": 2.47,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 25,
@@ -810,7 +846,8 @@
      "contenance": "160 g",
      "prix_ttc": 1.45,
      "prix_mesure": 8.6,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     },
     {
      "id": 31,
@@ -831,7 +868,8 @@
      "contenance": "160 g",
      "prix_ttc": 1.45,
      "prix_mesure": 8.6,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     },
     {
      "id": 56,
@@ -852,7 +890,8 @@
      "contenance": "750 ml",
      "prix_ttc": 2.26,
      "prix_mesure": 2.51,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     }
    ]
   },
@@ -881,7 +920,8 @@
      "contenance": "1001 ml",
      "prix_ttc": 2.44,
      "prix_mesure": 2.31,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 162,
@@ -902,7 +942,8 @@
      "contenance": "360 g",
      "prix_ttc": 8.84,
      "prix_mesure": 20.47,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     },
     {
      "id": 169,
@@ -923,7 +964,8 @@
      "contenance": "1001 ml",
      "prix_ttc": 2.48,
      "prix_mesure": 2.34,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 183,
@@ -944,7 +986,8 @@
      "contenance": "96 g",
      "prix_ttc": 6.16,
      "prix_mesure": 53.44,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     },
     {
      "id": 26,
@@ -965,7 +1008,8 @@
      "contenance": "50 g",
      "prix_ttc": 0.66,
      "prix_mesure": 12.48,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     },
     {
      "id": 34,
@@ -986,7 +1030,8 @@
      "contenance": "87 g",
      "prix_ttc": 3.16,
      "prix_mesure": 30.25,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     },
     {
      "id": 36,
@@ -1007,7 +1052,8 @@
      "contenance": "30 g",
      "prix_ttc": 0.48,
      "prix_mesure": 13.43,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     },
     {
      "id": 43,
@@ -1028,7 +1074,8 @@
      "contenance": "40 g",
      "prix_ttc": 0.72,
      "prix_mesure": 14.92,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     },
     {
      "id": 47,
@@ -1049,7 +1096,8 @@
      "contenance": "250 ml",
      "prix_ttc": 1.68,
      "prix_mesure": 5.6,
-     "mesure_unit": "L"
+     "mesure_unit": "L",
+     "compare": null
     },
     {
      "id": 48,
@@ -1070,7 +1118,8 @@
      "contenance": "14 g",
      "prix_ttc": 0.62,
      "prix_mesure": 36.86,
-     "mesure_unit": "kg"
+     "mesure_unit": "kg",
+     "compare": null
     }
    ]
   }
