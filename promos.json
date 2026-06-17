@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T16:44",
- "updated_human": "mercredi 17 juin à 16h44",
+ "updated_iso": "2026-06-17T16:49",
+ "updated_human": "mercredi 17 juin à 16h49",
  "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 16h03",
  "magasin": "Metro Nanterre + Degrenne",
@@ -16,6 +16,7 @@
      "name": "Chivas Regal Whisky XV 15 ans 40% 70 cl",
      "image": "img/c14b9655e0f5bf84.png",
      "marque": "Chivas Regal",
+     "kind": "identique",
      "metro": {
       "id": 70,
       "name": "Chivas Regal Whisky XV 15 ans 40% 70 cl",
@@ -34,9 +35,82 @@
      },
      "cheaper": "degrenne",
      "pct": 5,
-     "basis": "mesure",
-     "unit": "L",
-     "eco": 1.59
+     "unit": "L"
+    },
+    {
+     "name": "Sobieski Vodka 37.5° 70 cl",
+     "image": "img/0880910a037ba0af.png",
+     "marque": "Sobieski",
+     "kind": "identique",
+     "metro": {
+      "id": 143,
+      "name": "Sobieski Vodka 37.5° 70 cl",
+      "prix": 6.98,
+      "mesure": 9.97,
+      "unit": "L",
+      "format": "70 cl"
+     },
+     "degrenne": {
+      "id": 265,
+      "name": "70cl vodka noix coco 37°5ciroc",
+      "prix": 25.79,
+      "mesure": 36.84,
+      "unit": "L",
+      "format": "70 cl"
+     },
+     "cheaper": "metro",
+     "pct": 73,
+     "unit": "L"
+    },
+    {
+     "name": "Pringles crème oignon 70 g",
+     "image": "img/b13fbf5d474f0fc6.png",
+     "marque": "Pringles",
+     "kind": "alternatif",
+     "metro": {
+      "id": 24,
+      "name": "Pringles crème oignon 70 g",
+      "prix": 1.21,
+      "mesure": 17.23,
+      "unit": "kg",
+      "format": "70 g"
+     },
+     "degrenne": {
+      "id": 266,
+      "name": "165g pringles cheese & oignon",
+      "prix": 1.52,
+      "mesure": 9.21,
+      "unit": "kg",
+      "format": "165 g"
+     },
+     "cheaper": "degrenne",
+     "pct": 47,
+     "unit": "kg"
+    },
+    {
+     "name": "Granola lait 9 x 200 g soit 1.8 kg",
+     "image": "img/a113287d1a519c4a.png",
+     "marque": "Granola",
+     "kind": "alternatif",
+     "metro": {
+      "id": 50,
+      "name": "Granola lait 9 x 200 g soit 1.8 kg",
+      "prix": 14.63,
+      "mesure": 8.13,
+      "unit": "kg",
+      "format": "9 × 200 g"
+     },
+     "degrenne": {
+      "id": 218,
+      "name": "L.3x200g granola lait lu",
+      "prix": 4.92,
+      "mesure": 8.2,
+      "unit": "kg",
+      "format": "3 × 200 g"
+     },
+     "cheaper": "metro",
+     "pct": 1,
+     "unit": "kg"
     }
    ]
   },
