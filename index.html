@@ -203,6 +203,7 @@
   .tot .l span:last-child{color:var(--ink); font-weight:600}
   .tot .l.eco span:last-child{color:var(--green)}
   .tot .l.big{font-size:18px; font-weight:750; color:var(--ink); border-top:1px solid var(--hair); margin-top:8px; padding-top:11px}
+  .smsbtn{display:block; text-align:center; margin-top:10px; padding:12px; border-radius:12px; background:rgba(47,92,146,.10); color:var(--metro); border:1px solid rgba(47,92,146,.35); font-weight:700; font-size:13.5px; text-decoration:none}
   .valbtn{position:sticky; bottom:0; margin-top:14px; width:100%; border:0; padding:16px; border-radius:16px; color:#fff; font-size:16px; font-weight:700;
           background:rgba(44,48,56,.95); box-shadow:var(--gloss), 0 8px 22px rgba(44,48,56,.32)}
 </style>
@@ -405,6 +406,10 @@ function refreshCart(){
   if(tg){ if(n>0){ tg.MainButton.setText('🛒 Voir mon panier · '+eur(sub)); tg.MainButton.show(); } else tg.MainButton.hide(); }
   if(document.getElementById('sheet').classList.contains('show')) renderCart();
 }
+function smsLink(sk){
+  const body="Commande Metro Nanterre - Daily Defense (Paco)\n"+sk.map(k=>cart[k].qty+"x "+cart[k].item.name).join("\n")+"\nMerci de preparer. Cdt, Paco";
+  return `<a class="smsbtn" href="sms:0620202036?body=${encodeURIComponent(body)}">\U0001F4F1 Envoyer la commande Metro par SMS</a>`;
+}
 function renderCart(){
   const list=document.getElementById('cartList'); const ks=Object.keys(cart);
   const box=document.getElementById('totBox'), btn=document.getElementById('valBtn');
@@ -420,7 +425,7 @@ function renderCart(){
   for(const g of [['metro','🔵 Panier Metro'],['degrenne','🟢 Panier Degrenne']]){
     const sk=ks.filter(k=>cart[k].item.source===g[0]); if(!sk.length) continue;
     const st=sk.reduce((a,k)=>a+cart[k].item.prix*cart[k].qty,0);
-    html+=`<div class="cart-grp"><div class="cart-grp-h"><span>${g[1]}</span><span>${eur(st)}</span></div>${sk.map(ciHTML).join('')}</div>`;
+    html+=`<div class="cart-grp"><div class="cart-grp-h"><span>${g[1]}</span><span>${eur(st)}</span></div>${sk.map(ciHTML).join('')}${g[0]==='metro'?smsLink(sk):''}</div>`;
   }
   list.innerHTML=html;
   const {sub,eco}=totals();
