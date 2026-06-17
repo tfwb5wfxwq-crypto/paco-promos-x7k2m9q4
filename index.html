@@ -312,7 +312,7 @@ function compareCardHTML(c){
       <div class="cc-simg">${pimg(s)}</div>
       <div class="cc-pname">${s.name}</div>
       ${s.format?`<div class="cc-qty">📦 ${s.format}</div>`:''}
-      <div class="cc-px">${eur(s.prix)}<span class="cc-pu"> /pièce</span></div>${s.mesure?`<div class="cc-mes">${eur(s.mesure)}/${s.unit}</div>`:''}
+      <div class="cc-px">${eur(s.prix)}<span class="cc-pu"> ${(s.format&&s.format.includes('×'))?'le lot':'/pièce'}</span></div>${s.mesure?`<div class="cc-mes">soit ${eur(s.mesure)}/${s.unit}</div>`:''}
       ${s.colisage?`<div class="cc-cond">📦 carton de <b>${s.colisage}</b> · ${eur(s.prix_carton)}</div>`:''}
       <div class="cc-add">＋ Ajouter 1</div></div>`;
   const ch=c.cheaper==='metro'?'Metro':'Degrenne';
