@@ -1,7 +1,7 @@
 {
- "updated_iso": "2026-06-17T15:32",
- "updated_human": "mercredi 17 juin à 15h32",
- "updated_metro": "mercredi 17 juin à 10h20",
+ "updated_iso": "2026-06-17T15:41",
+ "updated_human": "mercredi 17 juin à 15h41",
+ "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 10h20",
  "magasin": "Metro Nanterre + Degrenne",
  "sections": [
@@ -25,7 +25,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "VERY",
+     "contenance": "750 ml",
+     "prix_ttc": 2.26,
+     "prix_mesure": 2.51,
+     "mesure_unit": "L"
     },
     {
      "id": 40,
@@ -41,7 +46,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Grimbergen",
+     "contenance": "500 ml",
+     "prix_ttc": 1.29,
+     "prix_mesure": 2.15,
+     "mesure_unit": "L"
     },
     {
      "id": 131,
@@ -57,7 +67,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Esselte",
+     "contenance": "227 g",
+     "prix_ttc": 20.84,
+     "prix_mesure": 76.52,
+     "mesure_unit": "kg"
     },
     {
      "id": 172,
@@ -73,7 +88,12 @@
      "ends_n": 13,
      "ends_date": "2026-06-30",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "SAN MARTIN",
+     "contenance": "1450 g",
+     "prix_ttc": 17.66,
+     "prix_mesure": 11.54,
+     "mesure_unit": "kg"
     },
     {
      "id": 54,
@@ -89,7 +109,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Corona",
+     "contenance": "1980 ml",
+     "prix_ttc": 7.11,
+     "prix_mesure": 3.4,
+     "mesure_unit": "L"
     },
     {
      "id": 98,
@@ -105,7 +130,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Delirium",
+     "contenance": "330 ml",
+     "prix_ttc": 1.8,
+     "prix_mesure": 4.55,
+     "mesure_unit": "L"
     },
     {
      "id": 84,
@@ -121,7 +151,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Lion",
+     "contenance": "400 g",
+     "prix_ttc": 2.39,
+     "prix_mesure": 5.67,
+     "mesure_unit": "kg"
     },
     {
      "id": 139,
@@ -137,7 +172,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Yushan Signature",
+     "contenance": "700 ml",
+     "prix_ttc": 28.49,
+     "prix_mesure": 33.91,
+     "mesure_unit": "L"
     },
     {
      "id": 152,
@@ -153,7 +193,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Brewdog",
+     "contenance": "330 ml",
+     "prix_ttc": 1.31,
+     "prix_mesure": 3.76,
+     "mesure_unit": "L"
     },
     {
      "id": 168,
@@ -169,7 +214,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Yamazakura",
+     "contenance": "700 ml",
+     "prix_ttc": 39.47,
+     "prix_mesure": 46.99,
+     "mesure_unit": "L"
     },
     {
      "id": 159,
@@ -185,7 +235,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Acial",
+     "contenance": "18000 g",
+     "prix_ttc": 153.6,
+     "prix_mesure": 7.11,
+     "mesure_unit": "kg"
     },
     {
      "id": 157,
@@ -201,7 +256,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Esselte",
+     "contenance": "145 g",
+     "prix_ttc": 10.46,
+     "prix_mesure": 60.14,
+     "mesure_unit": "kg"
     }
    ]
   },
@@ -225,7 +285,12 @@
      "ends_n": null,
      "ends_date": null,
      "reason": "acheté il y a 60 j",
-     "sous_habituel": 13
+     "sous_habituel": 13,
+     "marque": null,
+     "contenance": null,
+     "prix_ttc": null,
+     "prix_mesure": null,
+     "mesure_unit": null
     },
     {
      "id": 369,
@@ -241,7 +306,12 @@
      "ends_n": null,
      "ends_date": null,
      "reason": "acheté il y a 60 j",
-     "sous_habituel": 13
+     "sous_habituel": 13,
+     "marque": null,
+     "contenance": null,
+     "prix_ttc": null,
+     "prix_mesure": null,
+     "mesure_unit": null
     },
     {
      "id": 298,
@@ -257,7 +327,12 @@
      "ends_n": null,
      "ends_date": null,
      "reason": "acheté il y a 392 j",
-     "sous_habituel": 12
+     "sous_habituel": 12,
+     "marque": null,
+     "contenance": null,
+     "prix_ttc": null,
+     "prix_mesure": null,
+     "mesure_unit": null
     },
     {
      "id": 396,
@@ -273,7 +348,12 @@
      "ends_n": null,
      "ends_date": null,
      "reason": "acheté il y a 392 j",
-     "sous_habituel": 12
+     "sous_habituel": 12,
+     "marque": null,
+     "contenance": null,
+     "prix_ttc": null,
+     "prix_mesure": null,
+     "mesure_unit": null
     },
     {
      "id": 355,
@@ -289,7 +369,12 @@
      "ends_n": null,
      "ends_date": null,
      "reason": "Tu en prends souvent, c'est le moment d'en reprendre",
-     "sous_habituel": 2
+     "sous_habituel": 2,
+     "marque": null,
+     "contenance": null,
+     "prix_ttc": null,
+     "prix_mesure": null,
+     "mesure_unit": null
     },
     {
      "id": 236,
@@ -305,7 +390,12 @@
      "ends_n": null,
      "ends_date": null,
      "reason": "acheté il y a 357 j",
-     "sous_habituel": 1
+     "sous_habituel": 1,
+     "marque": null,
+     "contenance": null,
+     "prix_ttc": null,
+     "prix_mesure": null,
+     "mesure_unit": null
     },
     {
      "id": 336,
@@ -321,7 +411,12 @@
      "ends_n": null,
      "ends_date": null,
      "reason": "acheté il y a 357 j",
-     "sous_habituel": 1
+     "sous_habituel": 1,
+     "marque": null,
+     "contenance": null,
+     "prix_ttc": null,
+     "prix_mesure": null,
+     "mesure_unit": null
     }
    ]
   },
@@ -345,7 +440,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "acheté il y a 7 j",
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "ABSOLUT",
+     "contenance": "700 ml",
+     "prix_ttc": 13.26,
+     "prix_mesure": 15.79,
+     "mesure_unit": "L"
     },
     {
      "id": 85,
@@ -361,7 +461,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "Tu en prends souvent, c'est le moment d'en reprendre",
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Red Bull",
+     "contenance": "1000 ml",
+     "prix_ttc": 3.94,
+     "prix_mesure": 3.73,
+     "mesure_unit": "L"
     },
     {
      "id": 38,
@@ -377,7 +482,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "acheté il y a 153 j",
-     "sous_habituel": 10
+     "sous_habituel": 10,
+     "marque": "Cellier Des Dauphins",
+     "contenance": "250 ml",
+     "prix_ttc": 1.46,
+     "prix_mesure": 4.88,
+     "mesure_unit": "L"
     },
     {
      "id": 67,
@@ -393,7 +503,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "Tu en reprends régulièrement, c'est le moment d'en reprendre",
-     "sous_habituel": 4
+     "sous_habituel": 4,
+     "marque": "Candy'Up",
+     "contenance": "1200 ml",
+     "prix_ttc": 2.93,
+     "prix_mesure": 2.32,
+     "mesure_unit": "L"
     },
     {
      "id": 300,
@@ -409,7 +524,12 @@
      "ends_n": null,
      "ends_date": null,
      "reason": "Tu en reprends régulièrement, c'est le moment d'en reprendre",
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": null,
+     "contenance": null,
+     "prix_ttc": null,
+     "prix_mesure": null,
+     "mesure_unit": null
     },
     {
      "id": 62,
@@ -425,7 +545,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "Tu en reprends régulièrement, c'est le moment d'en reprendre",
-     "sous_habituel": 10
+     "sous_habituel": 10,
+     "marque": "Lion",
+     "contenance": "42 g",
+     "prix_ttc": 0.64,
+     "prix_mesure": 14.33,
+     "mesure_unit": "kg"
     },
     {
      "id": 233,
@@ -441,7 +566,12 @@
      "ends_n": null,
      "ends_date": null,
      "reason": "acheté il y a 27 j",
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": null,
+     "contenance": null,
+     "prix_ttc": null,
+     "prix_mesure": null,
+     "mesure_unit": null
     },
     {
      "id": 258,
@@ -457,7 +587,12 @@
      "ends_n": null,
      "ends_date": null,
      "reason": "Tu en prends souvent, c'est le moment d'en reprendre",
-     "sous_habituel": 2
+     "sous_habituel": 2,
+     "marque": null,
+     "contenance": null,
+     "prix_ttc": null,
+     "prix_mesure": null,
+     "mesure_unit": null
     }
    ]
   },
@@ -481,7 +616,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "Tu en reprends régulièrement, c'est le moment d'en reprendre",
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "ABSOLUT",
+     "contenance": "700 ml",
+     "prix_ttc": 15.06,
+     "prix_mesure": 17.93,
+     "mesure_unit": "L"
     },
     {
      "id": 44,
@@ -497,7 +637,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "Tu en reprends régulièrement, acheté il y a 19 j",
-     "sous_habituel": 30
+     "sous_habituel": 30,
+     "marque": "BARON DE LESTAC",
+     "contenance": "750 ml",
+     "prix_ttc": 3.02,
+     "prix_mesure": 3.35,
+     "mesure_unit": "L"
     },
     {
      "id": 118,
@@ -513,7 +658,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "Tu en reprends régulièrement, acheté il y a 19 j",
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "BARON DE LESTAC",
+     "contenance": "3000 ml",
+     "prix_ttc": 12.56,
+     "prix_mesure": 3.49,
+     "mesure_unit": "L"
     },
     {
      "id": 95,
@@ -529,7 +679,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "Tu en reprends régulièrement, acheté il y a 7 j",
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "JACK DANIEL'S",
+     "contenance": "700 ml",
+     "prix_ttc": 16.66,
+     "prix_mesure": 19.83,
+     "mesure_unit": "L"
     },
     {
      "id": 106,
@@ -545,7 +700,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "acheté il y a 14 j",
-     "sous_habituel": 11
+     "sous_habituel": 11,
+     "marque": "Don Julio",
+     "contenance": "700 ml",
+     "prix_ttc": 49.38,
+     "prix_mesure": 58.79,
+     "mesure_unit": "L"
     },
     {
      "id": 122,
@@ -561,7 +721,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "acheté il y a 14 j",
-     "sous_habituel": 4
+     "sous_habituel": 4,
+     "marque": "Don Julio",
+     "contenance": "700 ml",
+     "prix_ttc": 53.09,
+     "prix_mesure": 63.2,
+     "mesure_unit": "L"
     },
     {
      "id": 70,
@@ -577,7 +742,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "acheté il y a 27 j",
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Chivas Regal",
+     "contenance": "700 ml",
+     "prix_ttc": 38.93,
+     "prix_mesure": 46.34,
+     "mesure_unit": "L"
     },
     {
      "id": 143,
@@ -593,7 +763,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "acheté il y a 118 j",
-     "sous_habituel": 12
+     "sous_habituel": 12,
+     "marque": "Sobieski",
+     "contenance": "700 ml",
+     "prix_ttc": 8.38,
+     "prix_mesure": 9.97,
+     "mesure_unit": "L"
     },
     {
      "id": 82,
@@ -609,7 +784,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "acheté il y a 469 j",
-     "sous_habituel": 20
+     "sous_habituel": 20,
+     "marque": "Jean Dellac",
+     "contenance": "750 ml",
+     "prix_ttc": 2.22,
+     "prix_mesure": 2.47,
+     "mesure_unit": "L"
     },
     {
      "id": 25,
@@ -625,7 +805,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "acheté il y a 118 j",
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Doritos",
+     "contenance": "160 g",
+     "prix_ttc": 1.45,
+     "prix_mesure": 8.6,
+     "mesure_unit": "kg"
     },
     {
      "id": 31,
@@ -641,7 +826,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "acheté il y a 118 j",
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Doritos",
+     "contenance": "160 g",
+     "prix_ttc": 1.45,
+     "prix_mesure": 8.6,
+     "mesure_unit": "kg"
     },
     {
      "id": 56,
@@ -657,7 +847,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "acheté il y a 80 j",
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "VERY",
+     "contenance": "750 ml",
+     "prix_ttc": 2.26,
+     "prix_mesure": 2.51,
+     "mesure_unit": "L"
     }
    ]
   },
@@ -681,7 +876,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Caraibos",
+     "contenance": "1001 ml",
+     "prix_ttc": 2.44,
+     "prix_mesure": 2.31,
+     "mesure_unit": "L"
     },
     {
      "id": 162,
@@ -697,7 +897,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "aro",
+     "contenance": "360 g",
+     "prix_ttc": 8.84,
+     "prix_mesure": 20.47,
+     "mesure_unit": "kg"
     },
     {
      "id": 169,
@@ -713,7 +918,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Caraibos",
+     "contenance": "1001 ml",
+     "prix_ttc": 2.48,
+     "prix_mesure": 2.34,
+     "mesure_unit": "L"
     },
     {
      "id": 183,
@@ -729,7 +939,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Ballon Pub",
+     "contenance": "96 g",
+     "prix_ttc": 6.16,
+     "prix_mesure": 53.44,
+     "mesure_unit": "kg"
     },
     {
      "id": 26,
@@ -745,7 +960,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Milka",
+     "contenance": "50 g",
+     "prix_ttc": 0.66,
+     "prix_mesure": 12.48,
+     "mesure_unit": "kg"
     },
     {
      "id": 34,
@@ -761,7 +981,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "acheté il y a 464 j",
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Hollywood",
+     "contenance": "87 g",
+     "prix_ttc": 3.16,
+     "prix_mesure": 30.25,
+     "mesure_unit": "kg"
     },
     {
      "id": 36,
@@ -777,7 +1002,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "acheté il y a 464 j",
-     "sous_habituel": 8
+     "sous_habituel": 8,
+     "marque": "Crunch",
+     "contenance": "30 g",
+     "prix_ttc": 0.48,
+     "prix_mesure": 13.43,
+     "mesure_unit": "kg"
     },
     {
      "id": 43,
@@ -793,7 +1023,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Kitkat",
+     "contenance": "40 g",
+     "prix_ttc": 0.72,
+     "prix_mesure": 14.92,
+     "mesure_unit": "kg"
     },
     {
      "id": 47,
@@ -809,7 +1044,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": null,
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "J.P. CHENET",
+     "contenance": "250 ml",
+     "prix_ttc": 1.68,
+     "prix_mesure": 5.6,
+     "mesure_unit": "L"
     },
     {
      "id": 48,
@@ -825,7 +1065,12 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "acheté il y a 75 j",
-     "sous_habituel": null
+     "sous_habituel": null,
+     "marque": "Hollywood",
+     "contenance": "14 g",
+     "prix_ttc": 0.62,
+     "prix_mesure": 36.86,
+     "mesure_unit": "kg"
     }
    ]
   }

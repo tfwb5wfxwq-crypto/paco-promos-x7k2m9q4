@@ -215,9 +215,11 @@ function cardHTML(it){
   return `<div class="card" id="c${it.id}">
     <div class="ph">${imgBox(it)}<div class="tl">${badges}</div></div>
     <div class="cbody">
+      ${it.marque?`<div class="marque">${it.marque}</div>`:''}
       <div class="name">${it.name}</div>
       <div class="fmt">${it.format?it.format+' · ':''}<span class="srcx ${it.source}">${it.source==='degrenne'?'Degrenne':'Metro'}</span></div>
       <div class="prow"><span class="pnow">${eur(it.prix)}</span><span class="punit">${it.unit_noun||''}</span>${old}</div>
+      ${it.prix_mesure?`<div class="pmes">soit ${eur(it.prix_mesure)}/${it.mesure_unit}${it.prix_ttc?' · '+eur(it.prix_ttc)+' TTC':''}</div>`:''}
       <div class="meta">${metas}</div>
       ${ctrl(it)}
     </div></div>`;
