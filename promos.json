@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T15:50",
- "updated_human": "mercredi 17 juin à 15h50",
+ "updated_iso": "2026-06-17T15:56",
+ "updated_human": "mercredi 17 juin à 15h56",
  "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 10h20",
  "magasin": "Metro Nanterre + Degrenne",
@@ -284,13 +284,13 @@
    "sub": "Sous ton prix d'achat habituel",
    "items": [
     {
-     "id": 271,
+     "id": 266,
      "name": "165g pringles cheese & oignon",
      "source": "degrenne",
      "prix": 1.52,
      "barre": null,
      "remise": 0,
-     "image": "img/b13fbf5d474f0fc6.png",
+     "image": "img/d10189b02e69a2d2.png",
      "format": "165 g",
      "unit_noun": "l'unité",
      "ends": null,
@@ -313,13 +313,13 @@
      }
     },
     {
-     "id": 298,
+     "id": 293,
      "name": "75cl rose plaisir'ose mediterr",
      "source": "degrenne",
      "prix": 3.07,
      "barre": null,
      "remise": 0,
-     "image": null,
+     "image": "img/acf244d391399be6.png",
      "format": "75 cl",
      "unit_noun": "la bouteille",
      "ends": null,
@@ -335,13 +335,13 @@
      "compare": null
     },
     {
-     "id": 236,
+     "id": 234,
      "name": "*75cl bio minervois dom.reze 2021",
      "source": "degrenne",
      "prix": 3.65,
      "barre": null,
      "remise": 0,
-     "image": null,
+     "image": "img/14d2560ad724db24.png",
      "format": "75 cl",
      "unit_noun": "la bouteille",
      "ends": null,
@@ -453,13 +453,13 @@
      "compare": null
     },
     {
-     "id": 300,
+     "id": 289,
      "name": "75cl rose ouf de toi mediterra 2025 igp",
      "source": "degrenne",
      "prix": 3.85,
      "barre": null,
      "remise": 0,
-     "image": null,
+     "image": "img/1bfb943ce60dedbb.png",
      "format": "75 cl",
      "unit_noun": "la bouteille",
      "ends": null,
@@ -497,13 +497,13 @@
      "compare": null
     },
     {
-     "id": 233,
+     "id": 232,
      "name": "70cl whisky glenfidich 12a.40°",
      "source": "degrenne",
      "prix": 30.85,
      "barre": null,
      "remise": 0,
-     "image": "img/c14b9655e0f5bf84.png",
+     "image": "img/09e5e9c37858e10a.png",
      "format": "70 cl",
      "unit_noun": "la bouteille",
      "ends": null,
@@ -524,28 +524,6 @@
       "unit": "L",
       "cheaper_here": true
      }
-    },
-    {
-     "id": 258,
-     "name": "Poche 33cl caprisun multivitam",
-     "source": "degrenne",
-     "prix": 0.83,
-     "barre": null,
-     "remise": 0,
-     "image": null,
-     "format": "33 cl",
-     "unit_noun": "la bouteille",
-     "ends": null,
-     "ends_n": null,
-     "ends_date": null,
-     "reason": "Tu en prends souvent, c'est le moment d'en reprendre",
-     "sous_habituel": 2,
-     "marque": null,
-     "contenance": null,
-     "prix_ttc": null,
-     "prix_mesure": 2.52,
-     "mesure_unit": "L",
-     "compare": null
     }
    ]
   },
