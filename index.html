@@ -280,7 +280,7 @@ function compareCardHTML(c){
     <div class="cc-head"><div class="cc-img">${img}</div>
       <div>${c.marque?`<div class="marque">${c.marque}</div>`:''}<div class="cc-name">${c.name}</div></div></div>
     <div class="cc-vs">${side(c.metro,'METRO','metro',c.cheaper==='metro','metro')}${side(c.degrenne,'DEGRENNE','degrenne',c.cheaper==='degrenne','degrenne')}</div>
-    <div class="cc-eco">${ch} moins cher de <b>${c.pct}%</b> · tape le prix que tu veux</div>
+    <div class="cc-eco">✓ <b>${ch}</b> moins cher de <b>${c.pct}%</b>${c.unit?` au ${c.unit==='kg'?'kilo':'litre'}`:''} — touche un prix pour l'ajouter</div>
   </div>`;
 }
 function addCompare(src,id){
