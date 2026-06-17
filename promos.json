@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T17:11",
- "updated_human": "mercredi 17 juin à 17h11",
+ "updated_iso": "2026-06-17T18:12",
+ "updated_human": "mercredi 17 juin à 18h12",
  "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 16h03",
  "magasin": "Metro Nanterre + Degrenne",
@@ -27,13 +27,13 @@
       "image": "img/b13fbf5d474f0fc6.png"
      },
      "degrenne": {
-      "id": 266,
+      "id": 267,
       "name": "165g pringles cheese & oignon",
       "prix": 1.52,
       "mesure": 9.21,
       "unit": "kg",
       "format": "165 g",
-      "image": "img/d10189b02e69a2d2.png"
+      "image": "img/e571419c95237636.png"
      },
      "cheaper": "degrenne",
      "pct": 47,
@@ -54,13 +54,13 @@
       "image": "img/a113287d1a519c4a.png"
      },
      "degrenne": {
-      "id": 218,
+      "id": 219,
       "name": "L.3x200g granola lait lu",
       "prix": 4.92,
       "mesure": 8.2,
       "unit": "kg",
       "format": "3 × 200 g",
-      "image": "img/99dd34fc1188ac5d.png"
+      "image": "img/4f0735adc0c304d8.png"
      },
      "cheaper": "metro",
      "pct": 1,
@@ -81,13 +81,13 @@
       "image": "img/c14b9655e0f5bf84.png"
      },
      "degrenne": {
-      "id": 232,
+      "id": 233,
       "name": "70cl whisky glenfidich 12a.40°",
       "prix": 30.85,
       "mesure": 44.07,
       "unit": "L",
       "format": "70 cl",
-      "image": "img/09e5e9c37858e10a.png"
+      "image": "img/3412869bc81a6c29.png"
      },
      "cheaper": "degrenne",
      "pct": 5,
@@ -422,13 +422,13 @@
    "sub": "Sous ton prix d'achat habituel",
    "items": [
     {
-     "id": 266,
+     "id": 267,
      "name": "165g pringles cheese & oignon",
      "source": "degrenne",
      "prix": 1.52,
      "barre": null,
      "remise": 0,
-     "image": "img/d10189b02e69a2d2.png",
+     "image": "img/e571419c95237636.png",
      "format": "165 g",
      "unit_noun": "l'unité",
      "ends": null,
@@ -455,13 +455,13 @@
      "plus_bas_j": null
     },
     {
-     "id": 293,
+     "id": 294,
      "name": "75cl rose plaisir'ose mediterr",
      "source": "degrenne",
      "prix": 3.07,
      "barre": null,
      "remise": 0,
-     "image": "img/acf244d391399be6.png",
+     "image": "img/3c6702be600640b7.png",
      "format": "75 cl",
      "unit_noun": "la bouteille",
      "ends": null,
@@ -481,13 +481,13 @@
      "plus_bas_j": null
     },
     {
-     "id": 234,
+     "id": 235,
      "name": "*75cl bio minervois dom.reze 2021",
      "source": "degrenne",
      "prix": 3.65,
      "barre": null,
      "remise": 0,
-     "image": "img/14d2560ad724db24.png",
+     "image": "img/b16ec4fadf6550aa.png",
      "format": "75 cl",
      "unit_noun": "la bouteille",
      "ends": null,
@@ -619,13 +619,13 @@
      "plus_bas_j": null
     },
     {
-     "id": 289,
+     "id": 290,
      "name": "75cl rose ouf de toi mediterra 2025 igp",
      "source": "degrenne",
      "prix": 3.85,
      "barre": null,
      "remise": 0,
-     "image": "img/1bfb943ce60dedbb.png",
+     "image": "img/06b29d6bbd5bf50d.png",
      "format": "75 cl",
      "unit_noun": "la bouteille",
      "ends": null,
@@ -671,13 +671,13 @@
      "plus_bas_j": null
     },
     {
-     "id": 232,
+     "id": 233,
      "name": "70cl whisky glenfidich 12a.40°",
      "source": "degrenne",
      "prix": 30.85,
      "barre": null,
      "remise": 0,
-     "image": "img/09e5e9c37858e10a.png",
+     "image": "img/3412869bc81a6c29.png",
      "format": "70 cl",
      "unit_noun": "la bouteille",
      "ends": null,
