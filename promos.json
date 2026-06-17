@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T10:20",
- "updated_human": "mercredi 17 juin à 10h20",
+ "updated_iso": "2026-06-17T14:24",
+ "updated_human": "mercredi 17 juin à 14h24",
  "updated_metro": "mercredi 17 juin à 10h20",
  "updated_degrenne": "mercredi 17 juin à 10h20",
  "magasin": "Metro Nanterre + Degrenne",
@@ -79,8 +79,8 @@
      "id": 54,
      "name": "Corona Bière Cero 0.0% 6 x 33 cl soit 1.98 L",
      "source": "metro",
-     "prix": 1.12,
-     "barre": 1.61,
+     "prix": 6.74,
+     "barre": 9.63,
      "remise": 30,
      "image": "img/1cd56c741f4b468c.png",
      "format": "6 × 33 cl",
@@ -351,8 +351,8 @@
      "id": 85,
      "name": "Red Bull Boisson énergisante regular boîte 4 x 25 cl soit 1 L",
      "source": "metro",
-     "prix": 0.93,
-     "barre": 1.04,
+     "prix": 3.73,
+     "barre": 4.15,
      "remise": 10,
      "image": "img/e04aec7ec0c2e825.png",
      "format": "4 × 25 cl",
@@ -361,7 +361,7 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "Tu en prends souvent, c'est le moment d'en reprendre",
-     "sous_habituel": 8
+     "sous_habituel": null
     },
     {
      "id": 38,
@@ -383,8 +383,8 @@
      "id": 67,
      "name": "Candy'Up Boisson lactée Fraise 6 x 20 cl soit 1.2 L",
      "source": "metro",
-     "prix": 0.46,
-     "barre": 0.47,
+     "prix": 2.78,
+     "barre": 2.84,
      "remise": 2,
      "image": "img/a0f6f59d9280c428.png",
      "format": "6 × 20 cl",
@@ -393,7 +393,7 @@
      "ends_n": 3,
      "ends_date": "2026-06-20",
      "reason": "Tu en reprends régulièrement, c'est le moment d'en reprendre",
-     "sous_habituel": 84
+     "sous_habituel": 4
     },
     {
      "id": 301,
@@ -687,8 +687,8 @@
      "id": 169,
      "name": "aro Essuie mains blanc 50 x 70 cm x 3",
      "source": "metro",
-     "prix": 0.15,
-     "barre": 0.18,
+     "prix": 7.37,
+     "barre": 8.94,
      "remise": 18,
      "image": "img/685d2b2eb91a6e68.png",
      "format": "",
