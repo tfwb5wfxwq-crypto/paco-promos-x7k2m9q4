@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T17:04",
- "updated_human": "mercredi 17 juin à 17h04",
+ "updated_iso": "2026-06-17T17:06",
+ "updated_human": "mercredi 17 juin à 17h06",
  "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 16h03",
  "magasin": "Metro Nanterre + Degrenne",
@@ -388,7 +388,7 @@
   {
    "key": "degrenne",
    "titre": "Le moins cher chez Degrenne",
-   "emoji": "💚",
+   "emoji": "💙",
    "sub": "Sous ton prix d'achat habituel",
    "items": [
     {
