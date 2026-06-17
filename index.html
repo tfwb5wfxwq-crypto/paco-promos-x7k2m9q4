@@ -319,14 +319,16 @@ function render(){
     main.appendChild(sec);
   });
 }
+function cloudOk(){ try{ return !!(tg && tg.CloudStorage && tg.isVersionAtLeast && tg.isVersionAtLeast('6.9')); }catch(e){ return false; } }
 function saveCart(){
-  if(!(tg && tg.CloudStorage)) return;
+  if(!cloudOk()) return;
   const lite=Object.values(cart).map(({item,qty})=>({id:item.id,name:item.name,source:item.source,prix:item.prix,image:item.image,unit_noun:item.unit_noun||'',barre:item.barre||null,remise:item.remise||0,qty}));
   try{ tg.CloudStorage.setItem('cart', JSON.stringify(lite)); }catch(e){}
 }
 function loadCart(cb){
-  if(!(tg && tg.CloudStorage)){ cb&&cb(); return; }
-  tg.CloudStorage.getItem('cart',(err,val)=>{ if(!err&&val){ try{ JSON.parse(val).forEach(x=>{ cart[x.id]={item:x,qty:x.qty}; }); }catch(e){} } cb&&cb(); });
+  if(!cloudOk()){ cb&&cb(); return; }
+  try{ tg.CloudStorage.getItem('cart',(err,val)=>{ if(!err&&val){ try{ JSON.parse(val).forEach(x=>{ cart[x.id]={item:x,qty:x.qty}; }); }catch(e){} } cb&&cb(); }); }
+  catch(e){ cb&&cb(); }
 }
 function handleAddParam(){
   const m=location.search.match(/[?&]add=(\d+)/); if(!m) return;
@@ -392,7 +394,7 @@ function passerCommande(){
   const payload=JSON.stringify({action:'order',items});
   cart={};  // le panier se vide UNIQUEMENT à la commande (ou si on retire les articles)
   const send=()=>{ if(tg) tg.sendData(payload); else alert('Commande:\n'+payload); };
-  if(tg&&tg.CloudStorage){ tg.CloudStorage.setItem('cart','[]', send); } else send();
+  if(cloudOk()){ try{ tg.CloudStorage.setItem('cart','[]', send); }catch(e){ send(); } } else send();
 }
 if(tg){ tg.MainButton.onClick(()=>document.getElementById('openCart').click());
   tg.MainButton.color=getComputedStyle(document.documentElement).getPropertyValue('--degrenne').trim()||'#0f7a4f';
