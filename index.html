@@ -115,6 +115,12 @@
   .ccard .add{margin-top:11px}
   .cc-side{cursor:pointer}
   .cc-add{display:inline-block; margin-top:9px; font-size:11px; font-weight:700; color:#fff; background:var(--green); padding:6px 14px; border-radius:10px; box-shadow:var(--gloss)}
+  .cc-top{margin-bottom:10px}
+  .cc-simg{height:64px; display:flex; align-items:center; justify-content:center; margin:8px 0 4px}
+  .cc-simg img{max-height:60px; max-width:80%; object-fit:contain; filter:drop-shadow(0 4px 6px rgba(30,45,55,.12))}
+  .cc-fb{font-size:30px; opacity:.5}
+  .cc-qty{display:inline-block; font-size:11px; font-weight:700; color:var(--ink); background:rgba(255,255,255,.6); border:1px solid var(--stroke); padding:3px 9px; border-radius:8px; margin:4px 0 2px}
+  .cc-pu{font-size:10px; color:var(--soft); font-weight:500}
   .cart-grp{margin-bottom:14px}
   .cart-grp-h{display:flex; justify-content:space-between; align-items:center; font-size:13.5px; font-weight:750; padding:2px 4px 9px}
   .cc-kind{font-size:10px; font-weight:700; padding:2px 7px; border-radius:6px; display:inline-block}
@@ -260,7 +266,8 @@ function cardHTML(it){
   const dl=daysLeft(it.ends_date);
   if(dl!=null){ const soon=dl<=2; metas+=`<span class="tag ends${soon?' soon':''}">⏳ ${endsLabel(dl)}</span>`; }
   else if(it.ends){ metas+=`<span class="tag ends">⏳ ${it.ends}</span>`; }
-  if(it.sous_habituel) metas+=`<span class="tag eco">−${it.sous_habituel}% sous ton prix habituel</span>`;
+  if(it.eco_hab) metas+=`<span class="tag eco">💰 ${eur(it.eco_hab)} de moins que d'habitude (tu payais ${eur(it.prix_hab)})</span>`;
+  else if(it.sous_habituel) metas+=`<span class="tag eco">−${it.sous_habituel}% sous ton prix habituel</span>`;
   if(it.reason) metas+=`<span class="reason"><span class="ck">✓</span><span>${it.reason}</span></span>`;
   return `<div class="card" id="c${it.id}">
     <div class="ph">${imgBox(it)}<div class="tl">${badges}</div></div>
@@ -276,17 +283,19 @@ function cardHTML(it){
 }
 function compareCardHTML(c){
   const same=c.kind==='identique';
+  const pimg=s=> s.image?`<img src="${s.image}" onerror="this.replaceWith(document.createTextNode('${rayon(s.name)}'))">`:`<span class="cc-fb">${rayon(s.name)}</span>`;
   const side=(s,nm,cls,win,src)=>`<div class="cc-side ${win?'win':''}" onclick="addCompare('${src}',${s.id})">
       <div class="cc-src ${cls}">${nm}${win?' · le moins cher':''}</div>
+      <div class="cc-simg">${pimg(s)}</div>
       <div class="cc-pname">${s.name}</div>
-      <div class="cc-px">${eur(s.prix)}</div>${s.mesure?`<div class="cc-mes">${eur(s.mesure)}/${s.unit}</div>`:''}
-      <div class="cc-add">＋ Ajouter</div></div>`;
+      ${s.format?`<div class="cc-qty">📦 ${s.format}</div>`:''}
+      <div class="cc-px">${eur(s.prix)}<span class="cc-pu"> /pièce</span></div>${s.mesure?`<div class="cc-mes">${eur(s.mesure)}/${s.unit}</div>`:''}
+      <div class="cc-add">＋ Ajouter 1</div></div>`;
   const ch=c.cheaper==='metro'?'Metro':'Degrenne';
-  const img=c.image?`<img src="${c.image}" onerror="this.replaceWith(document.createTextNode('${rayon(c.name)}'))">`:rayon(c.name);
-  const kb=same?`<span class="cc-kind same">✅ Même produit</span>`:`<span class="cc-kind alt">≈ Alternatif (taille/goût différent)</span>`;
+  const kb=same?`<span class="cc-kind same">✅ Même produit</span>`:`<span class="cc-kind alt">≈ Alternatif à comparer</span>`;
   const verdict=same?`✓ <b>${ch}</b> moins cher de <b>${c.pct}%</b>`:`Meilleur rapport au ${c.unit==='kg'?'kilo':'litre'} : <b>${ch}</b> (−${c.pct}%)`;
   return `<div class="ccard">
-    <div class="cc-head"><div class="cc-img">${img}</div><div>${kb}${c.marque?`<div class="marque">${c.marque}</div>`:''}</div></div>
+    <div class="cc-top">${kb}</div>
     <div class="cc-vs">${side(c.metro,'METRO','metro',c.cheaper==='metro','metro')}${side(c.degrenne,'DEGRENNE','degrenne',c.cheaper==='degrenne','degrenne')}</div>
     <div class="cc-eco">${verdict}</div>
   </div>`;
