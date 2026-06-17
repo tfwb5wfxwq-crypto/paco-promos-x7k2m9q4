@@ -380,7 +380,9 @@ function passerCommande(){
   const items=Object.values(cart).map(({item,qty})=>({id:item.id,name:item.name,source:item.source,prix:item.prix,qty}));
   if(!items.length) return;
   const payload=JSON.stringify({action:'order',items});
-  if(tg) tg.sendData(payload); else alert('Commande:\n'+payload);
+  cart={};  // le panier se vide UNIQUEMENT à la commande (ou si on retire les articles)
+  const send=()=>{ if(tg) tg.sendData(payload); else alert('Commande:\n'+payload); };
+  if(tg&&tg.CloudStorage){ tg.CloudStorage.setItem('cart','[]', send); } else send();
 }
 if(tg){ tg.MainButton.onClick(()=>document.getElementById('openCart').click());
   tg.MainButton.color=getComputedStyle(document.documentElement).getPropertyValue('--degrenne').trim()||'#0f7a4f';
