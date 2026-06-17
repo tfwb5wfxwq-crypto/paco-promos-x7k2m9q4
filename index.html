@@ -365,6 +365,10 @@ function render(){
       <div><div class="stitle">${s.titre}</div><div class="ssub">${s.sub||''}</div></div></div>`+body;
     main.appendChild(sec);
   });
+  // scroll-spy : surligne le chip de la section visible
+  const chips=[...nav.children];
+  const obs=new IntersectionObserver((es)=>{ es.forEach(e=>{ if(e.isIntersecting){ const idx=[...main.children].indexOf(e.target); chips.forEach((c,j)=>c.classList.toggle('on', j===idx)); const ac=chips[idx]; if(ac) ac.scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'}); } }); },{rootMargin:'-115px 0px -78% 0px'});
+  [...main.children].forEach(sec=>obs.observe(sec));
 }
 function cloudOk(){ try{ return !!(tg && tg.CloudStorage && tg.isVersionAtLeast && tg.isVersionAtLeast('6.9')); }catch(e){ return false; } }
 function saveCart(){
