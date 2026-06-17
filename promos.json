@@ -1,10 +1,91 @@
 {
- "updated_iso": "2026-06-17T15:56",
- "updated_human": "mercredi 17 juin à 15h56",
+ "updated_iso": "2026-06-17T15:59",
+ "updated_human": "mercredi 17 juin à 15h59",
  "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 10h20",
  "magasin": "Metro Nanterre + Degrenne",
  "sections": [
+  {
+   "key": "comparatif",
+   "titre": "Metro ou Degrenne ?",
+   "emoji": "🆚",
+   "sub": "Le moins cher des deux, comparé au litre/kilo",
+   "type": "compare",
+   "items": [
+    {
+     "name": "Pringles crème oignon 70 g",
+     "image": "img/b13fbf5d474f0fc6.png",
+     "marque": "Pringles",
+     "metro": {
+      "id": 24,
+      "prix": 1.21,
+      "mesure": 17.23,
+      "unit": "kg",
+      "format": "70 g"
+     },
+     "degrenne": {
+      "id": 266,
+      "prix": 1.52,
+      "mesure": 9.21,
+      "unit": "kg",
+      "format": "165 g"
+     },
+     "cheaper": "degrenne",
+     "pct": 47,
+     "basis": "mesure",
+     "unit": "kg",
+     "eco": 0.31
+    },
+    {
+     "name": "Granola lait 9 x 200 g soit 1.8 kg",
+     "image": "img/a113287d1a519c4a.png",
+     "marque": "Granola",
+     "metro": {
+      "id": 50,
+      "prix": 14.63,
+      "mesure": 8.13,
+      "unit": "kg",
+      "format": "9 × 200 g"
+     },
+     "degrenne": {
+      "id": 218,
+      "prix": 4.92,
+      "mesure": null,
+      "unit": null,
+      "format": "3 × 200 g"
+     },
+     "cheaper": "degrenne",
+     "pct": 66,
+     "basis": "piece",
+     "unit": null,
+     "eco": 9.71
+    },
+    {
+     "name": "Chivas Regal Whisky XV 15 ans 40% 70 cl",
+     "image": "img/c14b9655e0f5bf84.png",
+     "marque": "Chivas Regal",
+     "metro": {
+      "id": 70,
+      "prix": 32.44,
+      "mesure": 46.34,
+      "unit": "L",
+      "format": "70 cl"
+     },
+     "degrenne": {
+      "id": 232,
+      "prix": 30.85,
+      "mesure": 44.07,
+      "unit": "L",
+      "format": "70 cl"
+     },
+     "cheaper": "degrenne",
+     "pct": 5,
+     "basis": "mesure",
+     "unit": "L",
+     "eco": 1.59
+    }
+   ]
+  },
   {
    "key": "flash",
    "titre": "Ventes flash",

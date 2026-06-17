@@ -92,6 +92,26 @@
   .tag.warn{background:rgba(176,106,22,.18); color:var(--amber)}
   .pmes{font-size:11px; color:var(--faint); margin-top:3px}
   .marque{font-size:10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--soft); margin-bottom:1px}
+  /* COMPARATIF côte à côte */
+  .clist{display:flex; flex-direction:column; gap:12px}
+  .ccard{border-radius:18px; padding:13px; background:var(--glass); border:1px solid var(--stroke);
+         box-shadow:var(--gloss),var(--lift); -webkit-backdrop-filter:var(--blur); backdrop-filter:var(--blur)}
+  .cc-head{display:flex; gap:11px; align-items:center; margin-bottom:11px}
+  .cc-img{width:54px; height:54px; flex:none; border-radius:12px; background:rgba(255,255,255,.55);
+          display:flex; align-items:center; justify-content:center; overflow:hidden; font-size:26px}
+  .cc-img img{max-width:100%; max-height:100%; object-fit:contain}
+  .cc-name{font-size:14px; font-weight:650; line-height:1.2}
+  .cc-vs{display:grid; grid-template-columns:1fr 1fr; gap:9px}
+  .cc-side{border-radius:13px; padding:10px 8px; text-align:center; border:1px solid var(--stroke)}
+  .cc-side.win{background:rgba(15,122,79,.13); border-color:rgba(15,122,79,.45)}
+  .cc-side.lose{background:rgba(120,135,125,.08); opacity:.5}
+  .cc-src{font-size:10px; font-weight:800; letter-spacing:.04em}
+  .cc-src.metro{color:var(--metro)} .cc-src.degrenne{color:var(--degrenne)}
+  .cc-px{font-size:19px; font-weight:750; margin-top:3px; letter-spacing:-.02em}
+  .cc-mes{font-size:10.5px; color:var(--soft)}
+  .cc-tag{font-size:9px; font-weight:800; color:#fff; background:var(--green); border-radius:6px; padding:2px 6px; margin-top:5px; display:inline-block}
+  .cc-eco{font-size:12.5px; color:var(--green); font-weight:600; margin-top:11px; text-align:center}
+  .ccard .add{margin-top:11px}
   .reason{font-size:11.5px; color:var(--soft); display:flex; gap:5px; align-items:flex-start; line-height:1.3}
   .reason .ck{color:var(--green); font-weight:800}
   .add{margin-top:12px; border:0; width:100%; padding:12px; border-radius:13px; color:#fff; font-size:14px; font-weight:650;
@@ -247,6 +267,28 @@ function cardHTML(it){
       ${ctrl(it)}
     </div></div>`;
 }
+function compareCardHTML(c){
+  const mes=s=> s.mesure?`<div class="cc-mes">${eur(s.mesure)}/${s.unit}</div>`:'';
+  const side=(s,nm,cls,win)=>`<div class="cc-side ${win?'win':'lose'}">
+      <div class="cc-src ${cls}">${nm}</div><div class="cc-px">${eur(s.prix)}</div>${mes(s)}
+      ${win?'<div class="cc-tag">le moins cher</div>':''}</div>`;
+  const ch=c.cheaper==='metro'?'Metro':'Degrenne';
+  const img=c.image?`<img src="${c.image}" onerror="this.replaceWith(document.createTextNode('${rayon(c.name)}'))">`:rayon(c.name);
+  return `<div class="ccard">
+    <div class="cc-head"><div class="cc-img">${img}</div>
+      <div>${c.marque?`<div class="marque">${c.marque}</div>`:''}<div class="cc-name">${c.name}</div></div></div>
+    <div class="cc-vs">${side(c.metro,'METRO','metro',c.cheaper==='metro')}${side(c.degrenne,'DEGRENNE','degrenne',c.cheaper==='degrenne')}</div>
+    <div class="cc-eco">✓ <b>${ch}</b> moins cher de <b>${c.pct}%</b>${c.eco?` · éco ${eur(c.eco)}/pièce`:''}</div>
+    <button class="add" onclick="addCompare('${c.cheaper}',${c.cheaper==='metro'?c.metro.id:c.degrenne.id})">＋ Ajouter le moins cher</button>
+  </div>`;
+}
+function addCompare(src,id){
+  for(const s of DATA.sections){ if(s.type!=='compare') continue;
+    for(const c of s.items){ const side=src==='metro'?c.metro:c.degrenne;
+      if(side.id===id){ const item={id,name:c.name,source:src,prix:side.prix,image:c.image,unit_noun:'',barre:null,remise:0};
+        cart[id]={item,qty:(cart[id]?cart[id].qty:0)+1}; refreshCart();
+        if(tg&&tg.HapticFeedback) tg.HapticFeedback.impactOccurred('light'); return; } } }
+}
 function render(){
   const sm=v=>v||'—';
   document.getElementById('majMetro').textContent = sm(DATA.updated_metro);
@@ -254,17 +296,18 @@ function render(){
   const nav=document.getElementById('nav'); nav.innerHTML='';
   const main=document.getElementById('main'); main.innerHTML='';
   DATA.sections.forEach((s,i)=>{
-    // auto-expiration : on retire les promos dont la date de fin est passée (jamais de négatif)
-    const items=s.items.filter(it=>{ const dl=daysLeft(it.ends_date); return dl==null || dl>=0; });
+    const isCmp = s.type==='compare';
+    const items = isCmp ? (s.items||[]) : s.items.filter(it=>{ const dl=daysLeft(it.ends_date); return dl==null || dl>=0; });
     if(!items.length) return;
     const c=document.createElement('button'); c.className='chip'+(i===0?' on':''); c.textContent=(s.emoji||'')+' '+s.titre;
     c.onclick=()=>{ const el=document.getElementById('sec'+i); if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
       document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on')); c.classList.add('on'); };
     nav.appendChild(c);
     const sec=document.createElement('section'); sec.id='sec'+i;
+    const body = isCmp ? `<div class="clist">${items.map(compareCardHTML).join('')}</div>`
+                       : `<div class="grid">${items.map(cardHTML).join('')}</div>`;
     sec.innerHTML=`<div class="shead"><div class="semoji">${s.emoji||'🛒'}</div>
-      <div><div class="stitle">${s.titre}</div><div class="ssub">${s.sub||''}</div></div></div>
-      <div class="grid">${items.map(cardHTML).join('')}</div>`;
+      <div><div class="stitle">${s.titre}</div><div class="ssub">${s.sub||''}</div></div></div>`+body;
     main.appendChild(sec);
   });
 }
@@ -282,10 +325,10 @@ function refreshCart(){
   const {sub,eco,n}=totals();
   document.getElementById('cartbar').classList.toggle('show', n>0);
   document.getElementById('cbN').textContent=n;
-  document.getElementById('cbL').textContent=n>1?'articles':'article';
+  document.getElementById('cbL').textContent='Voir mon panier';
   document.getElementById('cbTot').textContent=eur(sub);
   const e=document.getElementById('cbEco'); if(eco>0){e.textContent='éco '+eur(eco); e.style.display='';} else e.style.display='none';
-  if(tg){ if(n>0){ tg.MainButton.setText('Passer la commande · '+eur(sub)); tg.MainButton.show(); } else tg.MainButton.hide(); }
+  if(tg){ if(n>0){ tg.MainButton.setText('🛒 Voir mon panier · '+eur(sub)); tg.MainButton.show(); } else tg.MainButton.hide(); }
   if(document.getElementById('sheet').classList.contains('show')) renderCart();
 }
 function renderCart(){
@@ -315,7 +358,7 @@ function passerCommande(){
   const payload=JSON.stringify({action:'order',items});
   if(tg) tg.sendData(payload); else alert('Commande:\n'+payload);
 }
-if(tg){ tg.MainButton.onClick(passerCommande);
+if(tg){ tg.MainButton.onClick(()=>document.getElementById('openCart').click());
   tg.MainButton.color=getComputedStyle(document.documentElement).getPropertyValue('--degrenne').trim()||'#0f7a4f';
   tg.MainButton.textColor='#ffffff'; }
 fetch('promos.json?t='+Date.now()).then(r=>r.json()).then(d=>{ DATA=d; render(); refreshCart(); })
