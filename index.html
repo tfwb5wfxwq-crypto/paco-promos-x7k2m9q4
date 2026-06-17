@@ -181,6 +181,8 @@
 const tg = window.Telegram ? window.Telegram.WebApp : null;
 if(tg){ tg.ready(); tg.expand(); }
 const eur = n => (Math.round((n||0)*100)/100).toFixed(2).replace('.',',')+' €';
+function daysLeft(iso){ if(!iso) return null; const end=new Date(iso+'T23:59:59'); return Math.ceil((end-new Date())/86400000); }
+function endsLabel(dl){ return dl<=0 ? 'Dernier jour' : (dl===1 ? "Plus qu'1 jour" : ('Plus que '+dl+' jours')); }
 let DATA=null, cart={};
 const SRC = s => s==='metro' ? 'METRO' : (s==='degrenne'?'DEGRENNE':s.toUpperCase());
 
@@ -199,7 +201,9 @@ function cardHTML(it){
   let badges=''; if(it.remise>0) badges+=`<span class="pill remise">−${it.remise}%</span>`;
   const old = it.barre ? `<span class="pold">${eur(it.barre)}</span>` : '';
   let metas='';
-  if(it.ends){ const soon=it.ends_n!=null&&it.ends_n<=2; metas+=`<span class="tag ends${soon?' soon':''}">⏳ ${it.ends}</span>`; }
+  const dl=daysLeft(it.ends_date);
+  if(dl!=null){ const soon=dl<=2; metas+=`<span class="tag ends${soon?' soon':''}">⏳ ${endsLabel(dl)}</span>`; }
+  else if(it.ends){ metas+=`<span class="tag ends">⏳ ${it.ends}</span>`; }
   if(it.sous_habituel) metas+=`<span class="tag eco">−${it.sous_habituel}% sous ton prix habituel</span>`;
   if(it.reason) metas+=`<span class="reason"><span class="ck">✓</span><span>${it.reason}</span></span>`;
   return `<div class="card" id="c${it.id}">
@@ -217,15 +221,17 @@ function render(){
   const nav=document.getElementById('nav'); nav.innerHTML='';
   const main=document.getElementById('main'); main.innerHTML='';
   DATA.sections.forEach((s,i)=>{
-    if(!s.items.length) return;
+    // auto-expiration : on retire les promos dont la date de fin est passée (jamais de négatif)
+    const items=s.items.filter(it=>{ const dl=daysLeft(it.ends_date); return dl==null || dl>=0; });
+    if(!items.length) return;
     const c=document.createElement('button'); c.className='chip'+(i===0?' on':''); c.textContent=(s.emoji||'')+' '+s.titre;
-    c.onclick=()=>{ document.getElementById('sec'+i).scrollIntoView({behavior:'smooth',block:'start'});
+    c.onclick=()=>{ const el=document.getElementById('sec'+i); if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
       document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on')); c.classList.add('on'); };
     nav.appendChild(c);
     const sec=document.createElement('section'); sec.id='sec'+i;
     sec.innerHTML=`<div class="shead"><div class="semoji">${s.emoji||'🛒'}</div>
       <div><div class="stitle">${s.titre}</div><div class="ssub">${s.sub||''}</div></div></div>
-      <div class="grid">${s.items.map(cardHTML).join('')}</div>`;
+      <div class="grid">${items.map(cardHTML).join('')}</div>`;
     main.appendChild(sec);
   });
 }

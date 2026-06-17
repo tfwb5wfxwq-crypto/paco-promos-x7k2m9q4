@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T09:47",
- "updated_human": "mercredi 17 juin à 9h47",
+ "updated_iso": "2026-06-17T10:13",
+ "updated_human": "mercredi 17 juin à 10h13",
  "magasin": "Metro Nanterre + Degrenne",
  "sections": [
   {
@@ -36,6 +36,36 @@
      "unit_noun": "la bouteille",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
+    },
+    {
+     "id": 138,
+     "name": "Esselte Agrafeuse Rapid Maxi SP 19 rose",
+     "source": "metro",
+     "prix": 17.37,
+     "barre": 25.25,
+     "remise": 31,
+     "image": "img/809e3bde2fd98450.png",
+     "format": "",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
+    },
+    {
+     "id": 179,
+     "name": "SAN MARTIN Cheesecake framboise 1450 g Granderroble",
+     "source": "metro",
+     "prix": 16.74,
+     "barre": 24.39,
+     "remise": 31,
+     "image": "img/3e474735667fc262.png",
+     "format": "1450 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 13 jours",
+     "ends_n": 13,
      "reason": null,
      "sous_habituel": null
     },
@@ -83,6 +113,81 @@
      "ends_n": 3,
      "reason": null,
      "sous_habituel": null
+    },
+    {
+     "id": 146,
+     "name": "Yushan Signature Whisky Blended Malt 40° 70 cl sous étui",
+     "source": "metro",
+     "prix": 23.74,
+     "barre": 30.26,
+     "remise": 22,
+     "image": "img/44ac240c3b93a719.png",
+     "format": "70 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
+    },
+    {
+     "id": 159,
+     "name": "Brewdog Bière blonde sans alcool Punk AF 33 cl verre perdu",
+     "source": "metro",
+     "prix": 1.24,
+     "barre": 1.58,
+     "remise": 22,
+     "image": "img/fc7275f48607d03e.png",
+     "format": "33 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
+    },
+    {
+     "id": 175,
+     "name": "Yamazakura Whisky Peated sous étui 46° 70 cl",
+     "source": "metro",
+     "prix": 32.89,
+     "barre": 41.93,
+     "remise": 22,
+     "image": "img/ca35cddcd8d8932c.png",
+     "format": "70 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
+    },
+    {
+     "id": 166,
+     "name": "Acial Vestiaire industrie propre 1 porte bleu/gris L.30 cm ",
+     "source": "metro",
+     "prix": 128.0,
+     "barre": 163.0,
+     "remise": 21,
+     "image": "img/d04787cc81c87943.png",
+     "format": "",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
+    },
+    {
+     "id": 164,
+     "name": "Esselte Agrafeuse Stand Up F20 noir",
+     "source": "metro",
+     "prix": 8.72,
+     "barre": 10.57,
+     "remise": 18,
+     "image": "img/821c718089894b25.png",
+     "format": "",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     }
    ]
   },
@@ -93,7 +198,7 @@
    "sub": "Sous ton prix d'achat habituel",
    "items": [
     {
-     "id": 171,
+     "id": 272,
      "name": "165g pringles cheese & oignon",
      "source": "degrenne",
      "prix": 1.52,
@@ -108,7 +213,7 @@
      "sous_habituel": 13
     },
     {
-     "id": 198,
+     "id": 299,
      "name": "75cl rose plaisir'ose mediterr",
      "source": "degrenne",
      "prix": 3.07,
@@ -123,7 +228,7 @@
      "sous_habituel": 12
     },
     {
-     "id": 136,
+     "id": 237,
      "name": "*75cl bio minervois dom.reze 2021",
      "source": "degrenne",
      "prix": 3.65,
@@ -206,7 +311,7 @@
      "sous_habituel": 84
     },
     {
-     "id": 200,
+     "id": 301,
      "name": "75cl rose ouf de toi mediterra 2025 igp",
      "source": "degrenne",
      "prix": 3.85,
@@ -236,7 +341,7 @@
      "sous_habituel": 10
     },
     {
-     "id": 133,
+     "id": 234,
      "name": "70cl whisky glenfidich 12a.40°",
      "source": "degrenne",
      "prix": 30.85,
@@ -251,7 +356,7 @@
      "sous_habituel": null
     },
     {
-     "id": 158,
+     "id": 259,
      "name": "Poche 33cl caprisun multivitam",
      "source": "degrenne",
      "prix": 0.83,
@@ -274,6 +379,21 @@
    "sub": "Tes produits réguliers en baisse",
    "items": [
     {
+     "id": 205,
+     "name": "ABSOLUT Vodka aromatisée mangue 38% 70 cl",
+     "source": "metro",
+     "prix": 12.55,
+     "barre": 15.06,
+     "remise": 17,
+     "image": "img/449930b9de3a61fa.png",
+     "format": "70 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "Tu en reprends régulièrement, c'est le moment d'en reprendre",
+     "sous_habituel": null
+    },
+    {
      "id": 44,
      "name": "BARON DE LESTAC Bordeaux Élevé en fûts de chêne bouteille 75 cl",
      "source": "metro",
@@ -287,6 +407,21 @@
      "ends_n": 3,
      "reason": "Tu en reprends régulièrement, acheté il y a 19 j",
      "sous_habituel": 30
+    },
+    {
+     "id": 125,
+     "name": "BARON DE LESTAC Bordeaux Élevé en fûts de chêne fontaine à vin 3 L",
+     "source": "metro",
+     "prix": 10.47,
+     "barre": 14.95,
+     "remise": 30,
+     "image": "img/c9a925cf02382087.png",
+     "format": "",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "Tu en reprends régulièrement, acheté il y a 19 j",
+     "sous_habituel": null
     },
     {
      "id": 95,
@@ -308,7 +443,7 @@
      "name": "Don Julio Tequila Blanco 38° 70 cl",
      "source": "metro",
      "prix": 41.15,
-     "barre": 46.63,
+     "barre": 46.65,
      "remise": 12,
      "image": "img/4fffa4c806bc943e.png",
      "format": "70 cl",
@@ -317,6 +452,21 @@
      "ends_n": 3,
      "reason": "acheté il y a 14 j",
      "sous_habituel": 11
+    },
+    {
+     "id": 129,
+     "name": "Don Julio Tequila reposado 38° 70 cl",
+     "source": "metro",
+     "prix": 44.24,
+     "barre": 50.13,
+     "remise": 12,
+     "image": "img/efe7ef63390faad1.png",
+     "format": "70 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 14 j",
+     "sous_habituel": 4
     },
     {
      "id": 70,
@@ -332,6 +482,21 @@
      "ends_n": 3,
      "reason": "acheté il y a 27 j",
      "sous_habituel": null
+    },
+    {
+     "id": 150,
+     "name": "Sobieski Vodka 37.5° 70 cl",
+     "source": "metro",
+     "prix": 6.98,
+     "barre": 7.9,
+     "remise": 12,
+     "image": "img/0880910a037ba0af.png",
+     "format": "70 cl",
+     "unit_noun": "la bouteille",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": "acheté il y a 118 j",
+     "sous_habituel": 12
     },
     {
      "id": 82,
@@ -392,6 +557,89 @@
      "ends_n": 3,
      "reason": "acheté il y a 80 j",
      "sous_habituel": null
+    }
+   ]
+  },
+  {
+   "key": "pour_toi",
+   "titre": "Pour toi",
+   "emoji": "💡",
+   "sub": "Bons plans dans tes rayons",
+   "items": [
+    {
+     "id": 167,
+     "name": "Caraibos Nectar de pêche 1 L verre perdu",
+     "source": "metro",
+     "prix": 2.31,
+     "barre": 2.83,
+     "remise": 18,
+     "image": "img/5f1400e59c1a2ac1.png",
+     "format": "",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
+    },
+    {
+     "id": 169,
+     "name": "aro Essuie mains blanc 50 x 70 cm x 3",
+     "source": "metro",
+     "prix": 0.15,
+     "barre": 0.18,
+     "remise": 18,
+     "image": "img/685d2b2eb91a6e68.png",
+     "format": "",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
+    },
+    {
+     "id": 176,
+     "name": "Caraibos Boisson au lait de coco Lococo 1 L verre perdu",
+     "source": "metro",
+     "prix": 2.35,
+     "barre": 2.87,
+     "remise": 18,
+     "image": "img/eb220a839752fc29.png",
+     "format": "",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
+    },
+    {
+     "id": 190,
+     "name": "Ballon Pub Pompe double action",
+     "source": "metro",
+     "prix": 5.13,
+     "barre": 6.22,
+     "remise": 18,
+     "image": "img/5614a9c182243b75.png",
+     "format": "",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
+    },
+    {
+     "id": 26,
+     "name": "Milka Chocolat Brownie 50 g",
+     "source": "metro",
+     "prix": 0.62,
+     "barre": 0.75,
+     "remise": 17,
+     "image": "img/39df2859d0fee565.png",
+     "format": "50 g",
+     "unit_noun": "l'unité",
+     "ends": "Plus que 3 jours",
+     "ends_n": 3,
+     "reason": null,
+     "sous_habituel": null
     },
     {
      "id": 34,
@@ -424,59 +672,6 @@
      "sous_habituel": 8
     },
     {
-     "id": 48,
-     "name": "Hollywood Chewing-gum sans sucres avec édulcorants blancheur menthe polaire 14 g",
-     "source": "metro",
-     "prix": 0.52,
-     "barre": 0.62,
-     "remise": 17,
-     "image": "img/98f1c945b20a0ac8.png",
-     "format": "14 g",
-     "unit_noun": "l'unité",
-     "ends": "Plus que 3 jours",
-     "ends_n": 3,
-     "reason": "acheté il y a 75 j",
-     "sous_habituel": null
-    },
-    {
-     "id": 51,
-     "name": "Hollywood Chewing-gum Ice Fresh sans sucre 14 g",
-     "source": "metro",
-     "prix": 0.52,
-     "barre": 0.62,
-     "remise": 17,
-     "image": "img/fac72da71c4312a9.png",
-     "format": "14 g",
-     "unit_noun": "l'unité",
-     "ends": "Plus que 3 jours",
-     "ends_n": 3,
-     "reason": "acheté il y a 75 j",
-     "sous_habituel": null
-    }
-   ]
-  },
-  {
-   "key": "pour_toi",
-   "titre": "Pour toi",
-   "emoji": "💡",
-   "sub": "Bons plans dans tes rayons",
-   "items": [
-    {
-     "id": 26,
-     "name": "Milka Chocolat Brownie 50 g",
-     "source": "metro",
-     "prix": 0.62,
-     "barre": 0.75,
-     "remise": 17,
-     "image": "img/39df2859d0fee565.png",
-     "format": "50 g",
-     "unit_noun": "l'unité",
-     "ends": "Plus que 3 jours",
-     "ends_n": 3,
-     "reason": null,
-     "sous_habituel": null
-    },
-    {
      "id": 43,
      "name": "Kitkat Barre chocolatée Chunky 40 g",
      "source": "metro",
@@ -507,108 +702,18 @@
      "sous_habituel": null
     },
     {
-     "id": 49,
-     "name": "J.P. CHENET Pays d'Oc IGP bouteille 25 cl",
+     "id": 48,
+     "name": "Hollywood Chewing-gum sans sucres avec édulcorants blancheur menthe polaire 14 g",
      "source": "metro",
-     "prix": 1.4,
-     "barre": 1.68,
+     "prix": 0.52,
+     "barre": 0.62,
      "remise": 17,
-     "image": "img/729b1c279d943ed8.png",
-     "format": "25 cl",
-     "unit_noun": "la bouteille",
-     "ends": "Plus que 3 jours",
-     "ends_n": 3,
-     "reason": null,
-     "sous_habituel": null
-    },
-    {
-     "id": 53,
-     "name": "Milka Cookies sentation 24 pièces soit 52 g",
-     "source": "metro",
-     "prix": 0.66,
-     "barre": 0.79,
-     "remise": 17,
-     "image": "img/68612a247f6642b9.png",
-     "format": "52 g",
+     "image": "img/98f1c945b20a0ac8.png",
+     "format": "14 g",
      "unit_noun": "l'unité",
      "ends": "Plus que 3 jours",
      "ends_n": 3,
-     "reason": null,
-     "sous_habituel": null
-    },
-    {
-     "id": 72,
-     "name": "Cafe Royal Espresso 100 dosettes soit 520 g",
-     "source": "metro",
-     "prix": 22.27,
-     "barre": 26.72,
-     "remise": 17,
-     "image": "img/926d6e413ddc4992.png",
-     "format": "520 g",
-     "unit_noun": "l'unité",
-     "ends": "Plus que 3 jours",
-     "ends_n": 3,
-     "reason": null,
-     "sous_habituel": null
-    },
-    {
-     "id": 78,
-     "name": "Johnnie Walker Whisky 40° 35 cl",
-     "source": "metro",
-     "prix": 6.13,
-     "barre": 7.35,
-     "remise": 17,
-     "image": "img/2ee6d5327575af76.png",
-     "format": "35 cl",
-     "unit_noun": "la bouteille",
-     "ends": "Plus que 3 jours",
-     "ends_n": 3,
-     "reason": null,
-     "sous_habituel": null
-    },
-    {
-     "id": 81,
-     "name": "Cafe Royal Lungo Intensité 4 capsules aluminium x 100 soit 530 g",
-     "source": "metro",
-     "prix": 0.22,
-     "barre": 0.27,
-     "remise": 17,
-     "image": "img/b8ad2459d0521120.png",
-     "format": "530 g",
-     "unit_noun": "l'unité",
-     "ends": "Plus que 3 jours",
-     "ends_n": 3,
-     "reason": null,
-     "sous_habituel": null
-    },
-    {
-     "id": 86,
-     "name": "Cafe Royal Espresso Forte Intensité 8 capsules aluminium x 100 soit 520 g",
-     "source": "metro",
-     "prix": 0.22,
-     "barre": 0.27,
-     "remise": 17,
-     "image": "img/17b4064671655020.png",
-     "format": "520 g",
-     "unit_noun": "l'unité",
-     "ends": "Plus que 3 jours",
-     "ends_n": 3,
-     "reason": null,
-     "sous_habituel": null
-    },
-    {
-     "id": 100,
-     "name": "Ballon Pub Ballons 30 cm bleu/blanc/rouge x 100",
-     "source": "metro",
-     "prix": 0.09,
-     "barre": 0.1,
-     "remise": 17,
-     "image": "img/2c767e54c35cbe15.png",
-     "format": "",
-     "unit_noun": "l'unité",
-     "ends": "Plus que 3 jours",
-     "ends_n": 3,
-     "reason": null,
+     "reason": "acheté il y a 75 j",
      "sous_habituel": null
     }
    ]
