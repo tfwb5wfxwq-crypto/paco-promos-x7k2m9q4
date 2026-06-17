@@ -1,6 +1,6 @@
 {
- "updated_iso": "2026-06-17T20:00",
- "updated_human": "mercredi 17 juin à 20h00",
+ "updated_iso": "2026-06-17T20:03",
+ "updated_human": "mercredi 17 juin à 20h03",
  "updated_metro": "mercredi 17 juin à 15h41",
  "updated_degrenne": "mercredi 17 juin à 16h03",
  "magasin": "Metro Nanterre + Degrenne",
@@ -137,7 +137,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": true,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 11.28
     },
     {
      "id": 40,
@@ -163,7 +165,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": true,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 24,
+     "prix_carton": 25.78
     },
     {
      "id": 172,
@@ -189,7 +193,9 @@
      "mesure_unit": "kg",
      "compare": null,
      "super": true,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": null,
+     "prix_carton": null
     },
     {
      "id": 54,
@@ -215,7 +221,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": true,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 4,
+     "prix_carton": 26.96
     },
     {
      "id": 98,
@@ -241,7 +249,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 12,
+     "prix_carton": 18.01
     },
     {
      "id": 84,
@@ -267,7 +277,9 @@
      "mesure_unit": "kg",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": null,
+     "prix_carton": null
     },
     {
      "id": 139,
@@ -293,7 +305,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": null,
+     "prix_carton": null
     },
     {
      "id": 152,
@@ -319,7 +333,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 12,
+     "prix_carton": 14.9
     },
     {
      "id": 168,
@@ -345,7 +361,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": null,
+     "prix_carton": null
     },
     {
      "id": 160,
@@ -371,7 +389,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 13.87
     },
     {
      "id": 169,
@@ -397,7 +417,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 14.08
     }
    ]
   },
@@ -438,7 +460,9 @@
       "cheaper_here": true
      },
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 19,
+     "prix_carton": 28.88
     },
     {
      "id": 294,
@@ -464,7 +488,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 18.42
     },
     {
      "id": 235,
@@ -490,7 +516,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 21.9
     }
    ]
   },
@@ -524,7 +552,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": null,
+     "prix_carton": null
     },
     {
      "id": 85,
@@ -550,7 +580,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 22.41
     },
     {
      "id": 38,
@@ -576,7 +608,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 12,
+     "prix_carton": 14.64
     },
     {
      "id": 67,
@@ -602,7 +636,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": null,
+     "prix_carton": null
     },
     {
      "id": 290,
@@ -628,7 +664,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 23.1
     },
     {
      "id": 62,
@@ -654,7 +692,9 @@
      "mesure_unit": "kg",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 24,
+     "prix_carton": 14.45
     },
     {
      "id": 233,
@@ -687,7 +727,9 @@
       "cheaper_here": true
      },
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 185.1
     }
    ]
   },
@@ -721,7 +763,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": null,
+     "prix_carton": null
     },
     {
      "id": 44,
@@ -747,7 +791,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": true,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 15.08
     },
     {
      "id": 118,
@@ -773,7 +819,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": true,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": null,
+     "prix_carton": null
     },
     {
      "id": 95,
@@ -799,7 +847,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": null,
+     "prix_carton": null
     },
     {
      "id": 106,
@@ -825,7 +875,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 246.9
     },
     {
      "id": 122,
@@ -851,7 +903,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": null,
+     "prix_carton": null
     },
     {
      "id": 70,
@@ -884,7 +938,9 @@
       "cheaper_here": false
      },
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": null,
+     "prix_carton": null
     },
     {
      "id": 143,
@@ -910,7 +966,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": null,
+     "prix_carton": null
     },
     {
      "id": 82,
@@ -936,7 +994,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 11.1
     },
     {
      "id": 25,
@@ -962,7 +1022,9 @@
      "mesure_unit": "kg",
      "compare": null,
      "super": true,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 10,
+     "prix_carton": 13.76
     },
     {
      "id": 31,
@@ -988,7 +1050,9 @@
      "mesure_unit": "kg",
      "compare": null,
      "super": true,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 10,
+     "prix_carton": 13.76
     },
     {
      "id": 56,
@@ -1014,7 +1078,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": true,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 11.29
     }
    ]
   },
@@ -1048,7 +1114,9 @@
      "mesure_unit": "kg",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 24,
+     "prix_carton": 14.98
     },
     {
      "id": 34,
@@ -1074,7 +1142,9 @@
      "mesure_unit": "kg",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 15.79
     },
     {
      "id": 36,
@@ -1100,7 +1170,9 @@
      "mesure_unit": "kg",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 30,
+     "prix_carton": 12.09
     },
     {
      "id": 43,
@@ -1126,7 +1198,9 @@
      "mesure_unit": "kg",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 24,
+     "prix_carton": 14.33
     },
     {
      "id": 47,
@@ -1152,7 +1226,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 8.4
     },
     {
      "id": 48,
@@ -1178,7 +1254,9 @@
      "mesure_unit": "kg",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 20,
+     "prix_carton": 10.32
     },
     {
      "id": 49,
@@ -1204,7 +1282,9 @@
      "mesure_unit": "L",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 6,
+     "prix_carton": 8.4
     },
     {
      "id": 51,
@@ -1230,7 +1310,9 @@
      "mesure_unit": "kg",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 20,
+     "prix_carton": 10.32
     },
     {
      "id": 53,
@@ -1256,7 +1338,9 @@
      "mesure_unit": "kg",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": 24,
+     "prix_carton": 15.89
     },
     {
      "id": 72,
@@ -1282,7 +1366,9 @@
      "mesure_unit": "kg",
      "compare": null,
      "super": false,
-     "plus_bas_j": null
+     "plus_bas_j": null,
+     "colisage": null,
+     "prix_carton": null
     }
    ]
   }
